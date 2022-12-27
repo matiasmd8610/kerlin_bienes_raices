@@ -1,0 +1,58 @@
+/* .heading {
+    font-family: 'PT Sans', sans-serif;
+    color: #00b3a6;
+    text-shadow: 1px 1px 6px #fff;
+    font-size: 1.5rem;
+} */
+
+header {
+    &>.container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: center;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        row-gap: 20px;
+
+        @include media-breakpoint-up(md) {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        @include media-breakpoint-up(lg) {
+            flex-direction: row;
+            justify-content: space-between;
+     
+        }
+        .header__foto{
+
+            .image{
+                width: 280px;
+                @include media-breakpoint-up(md){
+                width: 351px;
+                }
+            }
+        }
+    }
+
+    .tel,
+    .mail {
+        color: #00b3a6;
+        text-shadow: 1px 1px 6px #fff;
+    }
+
+    .header__info {
+        text-align: center;
+
+        @include media-breakpoint-up(md) {
+            text-align: right;
+        }
+
+        p {
+            margin-bottom: 0.15rem;
+        }
+    }
+
+}

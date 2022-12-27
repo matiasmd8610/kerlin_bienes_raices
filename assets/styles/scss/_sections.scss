@@ -1,0 +1,7 @@
+//THANK YOU PAGE
+.thank-you {
+    text-align: center;
+    @include media-breakpoint-up(lg) {
+        margin-top: 5rem;
+    }
+}
