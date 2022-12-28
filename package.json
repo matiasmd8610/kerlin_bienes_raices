@@ -1,0 +1,28 @@
+{
+  "name": "kerlin_bienes_raices",
+  "version": "1.0.0",
+  "description": "Kerlin Bienes Raices",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass-dev": "sass --watch --update --style=expanded assets/styles/scss:assets/styles/css",
+    "sass-prod": "sass --no-source-map --style=compressed assets/styles/scss:assets/styles/css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matiasmd8610/kerlin_bienes_raices.git"
+  },
+  "author": "Matias",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/matiasmd8610/kerlin_bienes_raices/issues"
+  },
+  "homepage": "https://github.com/matiasmd8610/kerlin_bienes_raices#readme",
+  "devDependencies": {
+    "sass": "^1.57.1"
+  },
+  "dependencies": {
+    "aos": "^2.3.4",
+    "bootstrap": "^5.2.3"
+  }
+}
