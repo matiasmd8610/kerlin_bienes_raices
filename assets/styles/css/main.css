@@ -11796,6 +11796,9 @@ header > .container .header__foto .image {
     width: 351px;
   }
 }
+header .titulo {
+  color: red !important;
+}
 header .tel,
 header .mail {
   color: #00b3a6;

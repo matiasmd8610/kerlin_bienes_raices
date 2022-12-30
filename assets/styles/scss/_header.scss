@@ -35,8 +35,12 @@ header {
                 }
             }
         }
+        
     }
 
+    .titulo{
+        color: red !important;
+    }
     .tel,
     .mail {
         color: #00b3a6;
@@ -54,5 +58,6 @@ header {
             margin-bottom: 0.15rem;
         }
     }
+    
 
 }
