@@ -142,3 +142,41 @@
 //     }
 // }
 
+.masInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $colorMain;
+    padding: 40px 0px;
+    
+
+    .masInfo__datos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align:center;
+        color: white;
+
+        .masInfo__datos--titulo{
+            font-size: 2.2rem;
+            font-weight: bold;
+            margin-bottom: 0px;
+            
+        }
+        .masInfo__datos--text{
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+        }
+
+        .masInfo__datos--Whatsapp{
+            font-size: 2rem;
+            background-color: rgb(31, 202, 31);
+            border-radius: 22px;
+            border-style: none;
+            color: white;
+            padding: 0.3rem 1.5rem;
+
+        }
+    }
+}

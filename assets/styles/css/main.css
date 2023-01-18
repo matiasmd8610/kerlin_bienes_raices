@@ -11535,8 +11535,46 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
   transform: perspective(2500px) rotateX(0);
 }
 
+* {
+  padding: 0;
+  margin: 0;
+}
+
 html {
   scroll-behavior: smooth;
+}
+
+.masInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(32, 57, 111);
+  padding: 40px 0px;
+}
+.masInfo .masInfo__datos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+.masInfo .masInfo__datos .masInfo__datos--titulo {
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin-bottom: 0px;
+}
+.masInfo .masInfo__datos .masInfo__datos--text {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+.masInfo .masInfo__datos .masInfo__datos--Whatsapp {
+  font-size: 2rem;
+  background-color: rgb(31, 202, 31);
+  border-radius: 22px;
+  border-style: none;
+  color: white;
+  padding: 0.3rem 1.5rem;
 }
 
 header {
@@ -11556,55 +11594,16 @@ header .nav-link .active {
     text-shadow: 1px 1px 6px #fff;
     font-size: 1.5rem;
 } */
-.inline-gallery-container {
-  width: 700px;
-  height: 500px;
-  position: relative;
-}
-
-.lightGallery-captions h4, .lightGallery-captions .h4 {
-  transform: translate3d(60px, 0, 0px);
-}
-.lightGallery-captions p {
-  transform: translate3d(-60px, 0, 0px);
-}
-.lightGallery-captions h4, .lightGallery-captions .h4,
-.lightGallery-captions p {
-  opacity: 0;
-}
-
-.lg-current .lightGallery-captions h4, .lg-current .lightGallery-captions .h4,
-.lg-current .lightGallery-captions p {
-  transform: translate3d(0, 0, 0px);
-}
-.lg-current .lightGallery-captions h4, .lg-current .lightGallery-captions .h4,
-.lg-current .lightGallery-captions p {
-  opacity: 1;
-}
-
-.lg-slide-progress .lightGallery-captions h4, .lg-slide-progress .lightGallery-captions .h4 {
-  transform: translate3d(-60px, 0, 0px);
-}
-.lg-slide-progress .lightGallery-captions p {
-  transform: translate3d(60px, 0, 0px);
-}
-.lg-slide-progress .lightGallery-captions h4, .lg-slide-progress .lightGallery-captions .h4,
-.lg-slide-progress .lightGallery-captions p {
-  opacity: 0;
-}
-
-.lightGallery-captions h4, .lightGallery-captions .h4,
-.lightGallery-captions p {
-  transition: transform 0.4s ease-in-out, opacity 0.4s ease-in;
-}
-
-.lg-current .lightGallery-captions h4, .lg-current .lightGallery-captions .h4,
-.lg-current .lightGallery-captions p {
-  transition-delay: 500ms;
-}
-.lg-current.lg-slide-progress .lightGallery-captions h4, .lg-current.lg-slide-progress .lightGallery-captions .h4,
-.lg-current.lg-slide-progress .lightGallery-captions p {
-  transition-delay: 0ms;
+.loteo {
+  height: 30vh;
+  width: 100%;
+  margin: 50, 0;
+  background-color: bisque;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 /*# sourceMappingURL=main.css.map */
