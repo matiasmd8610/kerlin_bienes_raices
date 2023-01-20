@@ -149,7 +149,7 @@
     align-items: center;
     background-color: $colorMain;
     padding: 40px 0px;
-    
+        
 
     .masInfo__datos{
         display: flex;
@@ -178,5 +178,12 @@
             padding: 0.3rem 1.5rem;
 
         }
+    }
+}
+
+.maps{
+    iframe{
+        width:100%;
+        height: 300px;
     }
 }
