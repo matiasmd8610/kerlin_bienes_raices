@@ -1,13 +1,35 @@
 .loteo{
-    height: 30vh;
-    width: 100%;
-    margin: 50, 0;
-    background-color: bisque;
-    border: 2px solid black;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: darkgray;
+    height: 500px;
+    width: 100%;
+    margin: 50, 0;
+    background-color: bisque;
+    border: 2px solid black;
+    
+    .loteo__barrio{
+
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:left;
+    }
+    .barrio__fotos{
+        width: 100%;
+        
+        background-color: aqua;
+
+        img{
+            width: 50%;
+            
+            background-size: cover;
+        }
+    }
+
+    
 }
 
 
