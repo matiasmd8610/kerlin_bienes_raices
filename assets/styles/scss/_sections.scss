@@ -6,11 +6,10 @@
     background-color: darkgray;
     width: 100%;
     height: 600px;
-    margin: 50, 0;
     background-color: bisque;
     border: 2px solid black;
     gap:20px;
-    padding-top: 20px;
+    
     
     @include media-breakpoint-up(md) {
         flex-direction: row;
@@ -19,17 +18,17 @@
     }
 
     .loteo__barrio{
-        width: 50%;
+        width: 100%;
         display:flex;
         flex-direction:column;
         justify-content:center;
         align-items:center;
+        padding-top: 20px;
     }
     .barrio__fotos{
         display: flex;
         justify-content:center;
         align-items:center;
-
         width: 100%;
         height:100%;
         

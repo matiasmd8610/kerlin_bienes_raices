@@ -5,6 +5,21 @@ header {
 
     .navbar{
         background-color: $colorMain;
+        // height: 145px;
+        // se me jode el menu hamburguesa
+
+
+        .navbar-collapse {
+       flex-grow: inherit;
+        }
+      
+    }
+
+    .navbar-brand{
+
+        img{
+            width: 180px;
+        }
     }
 
 

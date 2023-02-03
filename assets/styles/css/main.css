@@ -11560,21 +11560,39 @@ html {
   color: white;
 }
 .masInfo .masInfo__datos .masInfo__datos--titulo {
-  font-size: 2.2rem;
+  font-size: 1.8rem;
   font-weight: bold;
-  margin-bottom: 0px;
+  margin: 0rem 0.3rem;
+}
+@media (min-width: 768px) {
+  .masInfo .masInfo__datos .masInfo__datos--titulo {
+    font-size: 2.2rem;
+  }
 }
 .masInfo .masInfo__datos .masInfo__datos--text {
   font-size: 1.3rem;
   margin-bottom: 1rem;
+  margin-right: 0.3rem;
+  margin-left: 0.3rem;
+}
+@media (min-width: 768px) {
+  .masInfo .masInfo__datos .masInfo__datos--text {
+    font-size: 1.4rem;
+  }
 }
 .masInfo .masInfo__datos .masInfo__datos--Whatsapp {
-  font-size: 2rem;
+  font-size: 1.3rem;
   background-color: rgb(31, 202, 31);
   border-radius: 22px;
   border-style: none;
   color: white;
   padding: 0.3rem 1.5rem;
+  margin: 0rem 0.3rem;
+}
+@media (min-width: 768px) {
+  .masInfo .masInfo__datos .masInfo__datos--Whatsapp {
+    font-size: 1.5rem;
+  }
 }
 
 .maps iframe {
@@ -11582,8 +11600,25 @@ html {
   height: 300px;
 }
 
+.copyright {
+  color: white;
+  background-color: rgb(32, 57, 111);
+  text-align: center;
+  font-size: 1rem;
+  padding: 0.2rem 0.5rem;
+}
+.copyright p {
+  margin: 0;
+}
+
 header .navbar {
   background-color: rgb(32, 57, 111);
+}
+header .navbar .navbar-collapse {
+  flex-grow: inherit;
+}
+header .navbar-brand img {
+  width: 180px;
 }
 
 /* .heading {
@@ -11600,11 +11635,9 @@ header .navbar {
   background-color: darkgray;
   width: 100%;
   height: 600px;
-  margin: 50, 0;
   background-color: bisque;
   border: 2px solid black;
   gap: 20px;
-  padding-top: 20px;
 }
 @media (min-width: 768px) {
   .loteo {
@@ -11614,11 +11647,12 @@ header .navbar {
   }
 }
 .loteo .loteo__barrio {
-  width: 50%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-top: 20px;
 }
 .loteo .barrio__fotos {
   display: flex;
