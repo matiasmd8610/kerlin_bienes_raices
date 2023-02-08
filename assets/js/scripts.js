@@ -2,8 +2,15 @@
 
 const swiper = new Swiper('.swiper', {
     // Optional parameters
-    direction: 'horizontal',
+    direction: "horizontal",
     loop: true,
+    effect: "fade" ,
+    autoplay: {
+        delay: 2000,
+        pauseOnMouseEnter: true,
+        disableOnInteraction: false,
+        },
+
   
     // If we need pagination
     pagination: {
