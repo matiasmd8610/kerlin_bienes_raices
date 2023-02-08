@@ -11627,6 +11627,17 @@ header .navbar-brand img {
     text-shadow: 1px 1px 6px #fff;
     font-size: 1.5rem;
 } */
+.swiper {
+  width: 100%;
+  height: auto;
+}
+.swiper .swiper-slide img {
+  width: 100%;
+  height: 310px;
+  object-fit: cover;
+  object-position: bottom;
+}
+
 .loteo {
   display: flex;
   flex-direction: column;
