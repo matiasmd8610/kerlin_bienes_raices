@@ -99,6 +99,12 @@
   </main>
 
     <footer>
+      <div class="maps">
+        <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.068529285423!2d-58.388863284770345!3d-34.60242858045982!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccac6edf51863%3A0x4134ca4b7b2d514a!2sUruguay+532%2C+C1015ABL+CABA!5e0!3m2!1ses!2sar!4v1510931924149"
+        title="Ubicación de la Oficina">
+        </iframe>
+      </div>
       <div class="masInfo">
         <div class="masInfo__datos">
           <p class="masInfo__datos--titulo">¿Querés más información?</p>
@@ -108,13 +114,59 @@
           </a>
         </div>
       </div>
-      
-      <div class="maps">
-        <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.068529285423!2d-58.388863284770345!3d-34.60242858045982!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccac6edf51863%3A0x4134ca4b7b2d514a!2sUruguay+532%2C+C1015ABL+CABA!5e0!3m2!1ses!2sar!4v1510931924149"
-        title="Ubicación de la Oficina">
-        </iframe>
+
+      <div class="formulario">
+        <div class="container pt-3">
+          
+            <div class="TituloFormulario">
+              <h1>Lotes en Venta de 800 a 2.300 m2 en San Nicolas de los arroyos</h1>
+              <p>Para más información completa el formulario de consultas</p> 
+            </div>
+                    
+            <form class="row" id="contact-form" action="send_mail.php" method="POST">
+              <div class="col-lg-6 col-sm-12">
+                <div class="form-group">
+                  <!-- <label for="name">Ingrese su nombre <sup>*</sup></label> -->
+                  <input type="text" class="form-control" id="name" name="name" placeholder="Nombre y Apellido">
+                </div>
+                <div class="form-group">
+                  <!-- <label for="name">Ingrese su nombre <sup>*</sup></label> -->
+                  <input type="tel" class="form-control" id="name" name="name" placeholder="Teléfono">
+                </div>
+                <div class="form-group">
+                  <!--  <label for="email">Ingrese su E-mail <sup>*</sup></label> -->
+                  <input type="email" class="form-control" id="email" name="email" placeholder="Email">
+                </div>
+                
+              </div>
+              
+              <div class="col-lg-6 col-sm-12">
+                <div class="form-group">
+                  <!-- <label for="comment">Escriba su consulta <sup>*</sup></label> -->
+                <textarea class="form-control" id="comment" name="comment" rows="6"                 placeholder="Mensaje"></textarea>
+                </div>
+                
+              </div>
+
+              <div class="col-lg-6 col-sm-12">
+                <div class="form-group">
+                  <button type="submit" class="btn btn-primary mt-3">ENVIAR</button>  
+                </div>
+                
+              </div>
+              
+              
+            </form>
+    
+              <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer>
+              </script>
+    
+              <div id="message" class="mt-5 alert alert-success alert-dismissible fade"></div>
+            
+          
+        </div>
       </div>
+      
       <div class="copyright">
         <p class="copy">Kerlin Bienes Raices &copy; <span class="year-copy"></span>. Todos los derechos reservados.</p>
       </div>
