@@ -11597,7 +11597,7 @@ html {
 
 .maps iframe {
   width: 100%;
-  height: 500px;
+  height: 420px;
 }
 
 .formulario {
@@ -11610,9 +11610,18 @@ html {
 .formulario .TituloFormulario p {
   font-size: 1.1rem;
 }
-
-.form-group {
+.formulario .form-group {
   padding: 10px 0px;
+}
+.formulario .form-group .form-control {
+  border-radius: 0;
+}
+.formulario .form-group .boton {
+  background: rgb(32, 57, 111);
+  color: #fff;
+  border: none;
+  width: 230px;
+  height: 40px;
 }
 
 .copyright {
@@ -11626,22 +11635,53 @@ html {
   margin: 0;
 }
 
+header .top-header-fondo {
+  background-color: rgb(32, 57, 111);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+header .top-header-fondo .top-header {
+  display: none;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  color: white;
+}
+@media (min-width: 992px) {
+  header .top-header-fondo .top-header {
+    display: flex;
+  }
+}
+header .top-header-fondo .top-header .slogan p {
+  margin: 0;
+  padding: 5px;
+}
+header .top-header-fondo .top-header .InfoContacto {
+  display: flex;
+  gap: 15px;
+}
+header .top-header-fondo .top-header .InfoContacto p {
+  margin: 0;
+  padding: 5px;
+}
+header .top-header-fondo .top-header .InfoContacto p a {
+  color: white;
+  text-decoration: none;
+}
 header .navbar {
   background-color: rgb(32, 57, 111);
 }
 header .navbar .navbar-collapse {
   flex-grow: inherit;
 }
+header .navbar .nav-link {
+  font-size: 18px;
+  color: #ffffff;
+}
 header .navbar-brand img {
-  width: 150px;
+  width: 140px;
 }
 
-/* .heading {
-    font-family: 'PT Sans', sans-serif;
-    color: #00b3a6;
-    text-shadow: 1px 1px 6px #fff;
-    font-size: 1.5rem;
-} */
 .swiper {
   width: 100%;
   height: auto;

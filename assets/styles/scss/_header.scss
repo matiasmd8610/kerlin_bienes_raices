@@ -2,6 +2,52 @@
 
 header {
     
+    .top-header-fondo{
+        background-color: $colorMain;
+        border-bottom: 1px solid rgba(255,255,255,0.2);
+
+        .top-header{
+
+            display: none;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 14px;
+            
+            
+            color:white;
+    
+            @include media-breakpoint-up(lg) {
+                display:flex
+            }
+            
+            .slogan{
+                p{
+                    margin:0;
+                    padding:5px;
+                }
+            }
+            
+            .InfoContacto{
+                display: flex;
+                gap:15px;
+    
+                p{
+                    margin:0;
+                    padding: 5px;
+                    a{
+                        color:white;
+                        text-decoration: none;
+                        
+                    }
+                }
+            }
+           
+        }
+    }
+    
+    
+    
 
     .navbar{
         background-color: $colorMain;
@@ -12,89 +58,19 @@ header {
         .navbar-collapse {
        flex-grow: inherit;
         }
+        .nav-link{
+            font-size: 18px;
+            color:#ffffff;
+        }
       
     }
 
     .navbar-brand{
 
         img{
-            width: 150px;
+            width: 140px;
         }
     }
 
 
-
-
-        
-
-
-
 }
-
-
-
-
-
-/* .heading {
-    font-family: 'PT Sans', sans-serif;
-    color: #00b3a6;
-    text-shadow: 1px 1px 6px #fff;
-    font-size: 1.5rem;
-} */
-
-// header {
-//     &>.container {
-//         display: flex;
-//         flex-direction: column;
-//         flex-wrap: nowrap;
-//         align-items: center;
-//         justify-content: center;
-//         padding-top: 1rem;
-//         padding-bottom: 1rem;
-//         row-gap: 20px;
-
-//         @include media-breakpoint-up(md) {
-//             flex-direction: row;
-//             justify-content: space-between;
-//         }
-
-//         @include media-breakpoint-up(lg) {
-//             flex-direction: row;
-//             justify-content: space-between;
-     
-//         }
-//         .header__foto{
-
-//             .image{
-//                 width: 280px;
-//                 @include media-breakpoint-up(md){
-//                 width: 351px;
-//                 }
-//             }
-//         }
-        
-//     }
-
-//     .titulo{
-//         color: red !important;
-//     }
-//     .tel,
-//     .mail {
-//         color: #00b3a6;
-//         text-shadow: 1px 1px 6px #fff;
-//     }
-
-//     .header__info {
-//         text-align: center;
-
-//         @include media-breakpoint-up(md) {
-//             text-align: right;
-//         }
-
-//         p {
-//             margin-bottom: 0.15rem;
-//         }
-//     }
-    
-
-// }
