@@ -11581,28 +11581,38 @@ h1, .h1 {
   color: white;
 }
 .masInfo .masInfo__datos .masInfo__datos--titulo {
-  font-size: 1.5rem;
+  font-size: 2.1rem;
   font-weight: bold;
   margin: 0rem 0.3rem;
 }
 @media (min-width: 768px) {
   .masInfo .masInfo__datos .masInfo__datos--titulo {
-    font-size: 1.9rem;
+    font-size: 2.5rem;
+  }
+}
+@media (min-width: 992px) {
+  .masInfo .masInfo__datos .masInfo__datos--titulo {
+    font-size: 3.1rem;
   }
 }
 .masInfo .masInfo__datos .masInfo__datos--text {
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   margin-bottom: 1rem;
   margin-right: 0.3rem;
   margin-left: 0.3rem;
 }
 @media (min-width: 768px) {
   .masInfo .masInfo__datos .masInfo__datos--text {
-    font-size: 1.2rem;
+    font-size: 1.9rem;
+  }
+}
+@media (min-width: 992px) {
+  .masInfo .masInfo__datos .masInfo__datos--text {
+    font-size: 2.1rem;
   }
 }
 .masInfo .masInfo__datos .masInfo__datos--Whatsapp {
-  font-size: 1.1rem;
+  font-size: 1.6rem;
   background-color: rgb(31, 202, 31);
   border-radius: 22px;
   border-style: none;
@@ -11612,13 +11622,16 @@ h1, .h1 {
 }
 @media (min-width: 768px) {
   .masInfo .masInfo__datos .masInfo__datos--Whatsapp {
-    font-size: 1.3rem;
+    font-size: 1.9rem;
   }
 }
 
+.maps {
+  height: 420px;
+}
 .maps iframe {
   width: 100%;
-  height: 420px;
+  height: 100%;
 }
 
 .formulario {
@@ -11629,10 +11642,15 @@ h1, .h1 {
   margin: 10px 0px;
 }
 .formulario .TituloFormulario p {
-  font-size: 1.1rem;
+  font-size: 1.6rem;
+}
+@media (min-width: 768px) {
+  .formulario .TituloFormulario p {
+    font-size: 2.1rem;
+  }
 }
 .formulario .form-group {
-  padding: 10px 0px;
+  margin-bottom: 21px;
 }
 .formulario .form-group .form-control {
   border-radius: 0;
@@ -11707,32 +11725,48 @@ header .navbar-brand img {
   object-position: bottom;
 }
 
-.loteo {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: darkgray;
-  width: 100%;
-  height: 600px;
-  background-color: bisque;
-  border: 2px solid black;
-  gap: 20px;
-}
-@media (min-width: 768px) {
-  .loteo {
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-  }
-}
 .loteo .loteo__barrio {
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   padding-top: 20px;
+}
+.loteo .loteo__barrio span {
+  margin-right: 0.5rem;
+}
+.loteo .loteo__barrio .loteo__barrio--lotes {
+  width: 100%;
+  border-top: solid 1px gray;
+  border-bottom: solid 1px gray;
+}
+.loteo .loteo__barrio .loteo__barrio--lotes div {
+  display: flex;
+}
+.loteo .loteo__barrio .loteo__barrio--lotes div .lote {
+  width: 70%;
+}
+@media (min-width: 576px) {
+  .loteo .loteo__barrio .loteo__barrio--lotes div .lote {
+    width: 50%;
+  }
+}
+@media (min-width: 768px) {
+  .loteo .loteo__barrio .loteo__barrio--lotes div .lote {
+    width: 40%;
+  }
+}
+@media (min-width: 992px) {
+  .loteo .loteo__barrio .loteo__barrio--lotes div .lote {
+    width: 55%;
+  }
+}
+.loteo .loteo__barrio .loteo__barrio--estado {
+  width: 100%;
+  display: flex;
+}
+.loteo .loteo__barrio .loteo__barrio--estado p:nth-child(2) {
+  color: red;
 }
 .loteo .barrio__fotos {
   display: flex;

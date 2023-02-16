@@ -159,30 +159,38 @@
         color: white;
 
         .masInfo__datos--titulo{
-            font-size: 1.5rem;
+            font-size: 2.1rem;
             font-weight: bold;
             margin: 0rem 0.3rem;
 
             @include media-breakpoint-up(md) {
-                font-size: 1.9rem;  
+                font-size: 2.5rem;  
+            
+            }
+            @include media-breakpoint-up(lg) {
+                font-size: 3.1rem;  
             
             }
         }
         .masInfo__datos--text{
-            font-size: 1.1rem;
+            font-size: 1.3rem;
             margin-bottom: 1rem;
             margin-right: 0.3rem;
             margin-left: 0.3rem;
 
             @include media-breakpoint-up(md) {
-                font-size: 1.2rem;  
+                font-size: 1.9rem;  
+            
+            }
+            @include media-breakpoint-up(lg) {
+                font-size: 2.1rem;  
             
             }
             
         }
 
         .masInfo__datos--Whatsapp{
-            font-size: 1.1rem;
+            font-size: 1.6rem;
             background-color: rgb(31, 202, 31);
             border-radius: 22px;
             border-style: none;
@@ -191,7 +199,7 @@
             margin: 0rem 0.3rem;
 
             @include media-breakpoint-up(md) {
-                font-size: 1.3rem;  
+                font-size: 1.9rem;  
             
             }
 
@@ -200,9 +208,11 @@
 }
 
 .maps{
+
+    height: 420px;
     iframe{
         width:100%;
-        height: 420px;
+        height: 100%;
         
     }
 }
@@ -215,12 +225,16 @@
         margin: 10px 0px;
         
         p{
-            font-size: 1.1rem;
+            font-size: 1.6rem;
+
+            @include media-breakpoint-up(md) {
+                font-size: 2.1rem;  
+            }
         }
     }
 
     .form-group{
-        padding: 10px 0px;
+        margin-bottom: 21px;
 
         .form-control{
             border-radius: 0;
