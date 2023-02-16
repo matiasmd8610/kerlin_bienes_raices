@@ -11535,13 +11535,34 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
   transform: perspective(2500px) rotateX(0);
 }
 
-* {
-  padding: 0;
-  margin: 0;
-}
-
 html {
   scroll-behavior: smooth;
+  font-size: 10px;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.8rem;
+  line-height: 1.3;
+}
+
+.btn-primary {
+  min-width: 200px;
+  display: inline-block;
+  background: rgb(32, 57, 111);
+  color: #fff;
+  border: none;
+  width: 230px;
+  height: 40px;
+}
+
+h1, .h1 {
+  font-size: 2.75rem;
+}
+@media (min-width: 768px) {
+  h1, .h1 {
+    font-size: 3.25rem;
+  }
 }
 
 .masInfo {
@@ -11615,13 +11636,6 @@ html {
 }
 .formulario .form-group .form-control {
   border-radius: 0;
-}
-.formulario .form-group .boton {
-  background: rgb(32, 57, 111);
-  color: #fff;
-  border: none;
-  width: 230px;
-  height: 40px;
 }
 
 .copyright {
