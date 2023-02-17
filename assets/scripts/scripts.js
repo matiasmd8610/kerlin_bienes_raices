@@ -5,12 +5,7 @@ const swiper = new Swiper('.swiper', {
     direction: "horizontal",
     loop: true,
     effect: "fade" ,
-    autoplay: {
-        delay: 1000,
-        pauseOnMouseEnter: true,
-        disableOnInteraction: false,
-        },
-
+    autoplay: false,
   
     // If we need pagination
     pagination: {
@@ -21,12 +16,7 @@ const swiper = new Swiper('.swiper', {
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
-    },
-  
-    // And if we need scrollbar
-    scrollbar: {
-      el: '.swiper-scrollbar',
-    },
+    }
   });
 
   //End swiper//

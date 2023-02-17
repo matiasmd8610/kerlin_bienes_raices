@@ -1,28 +1,27 @@
-
-
 header {
-    
-    .top-header-fondo{
-        background-color: $colorMain;
+    .top-header-fondo {
+        background-color: $color-blue-main;
         border-bottom: 1px solid rgba(255,255,255,0.2);
+        padding: 0.5rem 0;
+        display: none;
+        @include media-breakpoint-up(lg) {
+            display: block;
+        }
 
-        .top-header{
-
+        .top-header {
             display: none;
             flex-wrap: nowrap;
             justify-content: space-between;
             align-items: center;
-            font-size: 14px;
-            
-            
-            color:white;
+            font-size: 1.2rem;
+            color:#fff;
     
             @include media-breakpoint-up(lg) {
-                display:flex
+                display: flex;
             }
             
             .slogan{
-                p{
+                p {
                     margin:0;
                     padding:5px;
                 }
@@ -30,47 +29,68 @@ header {
             
             .InfoContacto{
                 display: flex;
-                gap:15px;
+                gap: 15px;
     
-                p{
-                    margin:0;
+                a {
                     padding: 5px;
-                    a{
-                        color:white;
-                        text-decoration: none;
-                        
+                    display: flex;
+                    color: #fff;
+                    text-decoration: none;
+                    align-items: center;
+
+                    &.link-text {
+                        i {
+                            margin-right: 0.5rem;
+                            display: inline-block;
+                        }
+                    }
+                    i {
+                        font-size: 1.4rem;
                     }
                 }
             }
            
         }
     }
-    
-    
-    
 
     .navbar{
-        background-color: $colorMain;
+        background-color: $color-blue-main;
         // height: 145px;
         // se me jode el menu hamburguesa
 
 
         .navbar-collapse {
-       flex-grow: inherit;
-        }
-        .nav-link{
-            font-size: 18px;
-            color:#ffffff;
+            flex-grow: inherit;
+            .nav-item {
+                &:not(:last-child) {
+                    margin-right: 2rem;
+                }
+                .nav-link{
+                    font-size: 1.8rem;
+                    color:#ffffff;
+                    letter-spacing: -0.02em;
+                }
+
+                &.contact-us {
+                    background-color: $color-whatsapp;
+                    padding: .2rem 1.6rem;
+                    display: flex;
+                    align-items: center;
+                    border-radius: 2rem;
+                    i {
+                        margin-right: 1rem;
+                    }
+                }
+            }
         }
       
     }
 
-    .navbar-brand{
-
-        img{
-            width: 140px;
+    .navbar-brand {
+        img {
+            width: 126px;
+            height: auto;
         }
     }
-
 
 }

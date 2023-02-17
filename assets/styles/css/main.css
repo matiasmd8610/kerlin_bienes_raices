@@ -11544,6 +11544,7 @@ body {
   font-family: "Montserrat", sans-serif;
   font-size: 1.8rem;
   line-height: 1.3;
+  color: #333;
 }
 
 .btn-primary {
@@ -11556,12 +11557,45 @@ body {
   height: 40px;
 }
 
+a {
+  transition: all 0.3s ease;
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+strong {
+  font-weight: 700;
+}
+
+h1, .h1,
+h2,
+.h2 {
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
 h1, .h1 {
-  font-size: 2.75rem;
+  font-size: 5rem;
+  color: #fff;
 }
 @media (min-width: 768px) {
   h1, .h1 {
-    font-size: 3.25rem;
+    font-size: 5.6rem;
+  }
+}
+
+h2, .h2 {
+  font-size: 2.2rem;
+}
+@media (min-width: 768px) {
+  h2, .h2 {
+    font-size: 3rem;
   }
 }
 
@@ -11670,14 +11704,21 @@ h1, .h1 {
 header .top-header-fondo {
   background-color: rgb(32, 57, 111);
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 0.5rem 0;
+  display: none;
+}
+@media (min-width: 992px) {
+  header .top-header-fondo {
+    display: block;
+  }
 }
 header .top-header-fondo .top-header {
   display: none;
   flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
-  font-size: 14px;
-  color: white;
+  font-size: 1.2rem;
+  color: #fff;
 }
 @media (min-width: 992px) {
   header .top-header-fondo .top-header {
@@ -11692,13 +11733,19 @@ header .top-header-fondo .top-header .InfoContacto {
   display: flex;
   gap: 15px;
 }
-header .top-header-fondo .top-header .InfoContacto p {
-  margin: 0;
+header .top-header-fondo .top-header .InfoContacto a {
   padding: 5px;
-}
-header .top-header-fondo .top-header .InfoContacto p a {
-  color: white;
+  display: flex;
+  color: #fff;
   text-decoration: none;
+  align-items: center;
+}
+header .top-header-fondo .top-header .InfoContacto a.link-text i {
+  margin-right: 0.5rem;
+  display: inline-block;
+}
+header .top-header-fondo .top-header .InfoContacto a i {
+  font-size: 1.4rem;
 }
 header .navbar {
   background-color: rgb(32, 57, 111);
@@ -11706,25 +11753,91 @@ header .navbar {
 header .navbar .navbar-collapse {
   flex-grow: inherit;
 }
-header .navbar .nav-link {
-  font-size: 18px;
+header .navbar .navbar-collapse .nav-item:not(:last-child) {
+  margin-right: 2rem;
+}
+header .navbar .navbar-collapse .nav-item .nav-link {
+  font-size: 1.8rem;
   color: #ffffff;
+  letter-spacing: -0.02em;
+}
+header .navbar .navbar-collapse .nav-item.contact-us {
+  background-color: #25D366;
+  padding: 0.2rem 1.6rem;
+  display: flex;
+  align-items: center;
+  border-radius: 2rem;
+}
+header .navbar .navbar-collapse .nav-item.contact-us i {
+  margin-right: 1rem;
 }
 header .navbar-brand img {
-  width: 140px;
+  width: 126px;
+  height: auto;
 }
 
+/*MAIN SLIDER
+****************************************************/
 .swiper {
   width: 100%;
   height: auto;
 }
-.swiper .swiper-slide img {
+.swiper .swiper-slide {
+  height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.swiper .swiper-slide:after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 100%;
   width: 100%;
-  height: 310px;
-  object-fit: cover;
-  object-position: bottom;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+.swiper .swiper-slide--content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  max-width: 80%;
+}
+.swiper .swiper-slide--content h2, .swiper .swiper-slide--content .h2 {
+  color: #fff;
+}
+.swiper .swiper-slide.slide-01 {
+  background-image: url("../../images/slide_01.JPG");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.swiper .swiper-slide.slide-02 {
+  background-color: red;
+}
+.swiper-button-prev, .swiper-button-next {
+  color: #fff;
+}
+.swiper-button-prev {
+  left: 2rem;
+}
+.swiper-button-next {
+  right: 2rem;
+}
+.swiper-pagination-bullets {
+  bottom: 2rem;
+}
+.swiper-pagination-bullet {
+  width: 4rem;
+  border-radius: 0;
+  height: 0.5rem;
+  background-color: #fff;
 }
 
+.loteo {
+  padding: 5rem 0;
+}
 .loteo .loteo__barrio {
   width: 100%;
   display: flex;
