@@ -76,8 +76,10 @@ header {
                     background-color: $color-whatsapp;
                     padding: .2rem 1.4rem;
                     display: flex;
+                    flex-wrap: nowrap;
                     align-items: center;
                     border-radius: 2rem;
+                    width: fit-content;
                     i {
                         margin-right: 1rem;
                     }

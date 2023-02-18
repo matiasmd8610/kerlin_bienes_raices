@@ -136,15 +136,17 @@
         flex-direction:column;
         align-items:flex-start;
         padding-top: 20px;
+        gap:20px;
 
-            span{
-                margin-right: 0.5rem;
-            }   
+        // .loteo__barrio--titulo{
+            
+        // }
 
         .loteo__barrio--lotes{
             width: 100%;
             border-top: solid 1px gray;
             border-bottom: solid 1px gray;
+            padding: 20px 0px;
 
             div {
                 display: flex;
@@ -175,7 +177,15 @@
                 p:nth-child(2){
                     color:red
                 }
-            }
+        }
+        .loteo__barrio--masInfo a{
+            text-decoration: none;
+
+        }
+        span{
+            margin-right: 0.5rem; 
+        }
+        
     }
     .barrio__fotos{
         width: 100%;

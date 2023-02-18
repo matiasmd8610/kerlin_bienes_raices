@@ -12437,10 +12437,9 @@ body {
 }
 
 .btn {
-  min-width: 200px;
+  min-width: 240px;
   color: #fff;
   border: none;
-  width: 230px;
   transition: all 0.3s ease;
   margin: 1rem 0;
   font-size: 1.8rem;
@@ -12451,6 +12450,12 @@ body {
   padding: 1.5rem 2.5rem;
   position: relative;
   font-weight: 600;
+  border-radius: 0px;
+}
+@media (min-width: 768px) {
+  .btn {
+    width: 280px;
+  }
 }
 .btn span {
   position: relative;
@@ -12485,6 +12490,15 @@ a {
 
 strong {
   font-weight: 700;
+}
+
+.detalle:after {
+  content: "";
+  display: block;
+  border: solid 2px;
+  background-color: rgb(32, 57, 111);
+  width: 90px;
+  transform: translateY(10px);
 }
 
 h1, .h1,
@@ -12683,8 +12697,10 @@ header .navbar .navbar-collapse .nav-item.contact-us {
   background-color: #25D366;
   padding: 0.2rem 1.4rem;
   display: flex;
+  flex-wrap: nowrap;
   align-items: center;
   border-radius: 2rem;
+  width: fit-content;
 }
 header .navbar .navbar-collapse .nav-item.contact-us i {
   margin-right: 1rem;
@@ -12806,14 +12822,13 @@ header .navbar-brand img {
   flex-direction: column;
   align-items: flex-start;
   padding-top: 20px;
-}
-.loteo .loteo__barrio span {
-  margin-right: 0.5rem;
+  gap: 20px;
 }
 .loteo .loteo__barrio .loteo__barrio--lotes {
   width: 100%;
   border-top: solid 1px gray;
   border-bottom: solid 1px gray;
+  padding: 20px 0px;
 }
 .loteo .loteo__barrio .loteo__barrio--lotes div {
   display: flex;
@@ -12842,6 +12857,12 @@ header .navbar-brand img {
 }
 .loteo .loteo__barrio .loteo__barrio--estado p:nth-child(2) {
   color: red;
+}
+.loteo .loteo__barrio .loteo__barrio--masInfo a {
+  text-decoration: none;
+}
+.loteo .loteo__barrio span {
+  margin-right: 0.5rem;
 }
 .loteo .barrio__fotos {
   width: 100%;

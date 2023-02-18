@@ -11,10 +11,10 @@ body {
 }
 
 .btn {
-    min-width: 200px;
+    min-width: 240px;
     color: #fff;
     border: none;
-    width: 230px;
+    
     transition: all 0.3s ease;
     margin: 1rem 0;
     font-size: 1.8rem;
@@ -25,6 +25,12 @@ body {
     padding: 1.5rem 2.5rem;
     position: relative;
     font-weight: 600;
+    border-radius: 0px;
+
+    @include media-breakpoint-up(md) {
+        width: 280px;
+    }
+
     span {
         position: relative;
         z-index: 10;
@@ -64,6 +70,15 @@ a {
 
 strong {
     font-weight: 700;
+}
+
+.detalle:after {
+    content: "";
+    display: block;
+    border:solid 2px;
+    background-color: $color-blue-main;
+    width: 90px;
+    transform: translateY(10px);
 }
 
 
