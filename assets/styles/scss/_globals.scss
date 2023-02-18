@@ -10,16 +10,48 @@ body {
     color: $color-main;
 }
 
-.btn-primary {
+.btn {
     min-width: 200px;
-    display: inline-block;
-    background: $color-blue-main;
     color: #fff;
     border: none;
     width: 230px;
-    height: 40px;
+    transition: all 0.3s ease;
+    margin: 1rem 0;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem 2.5rem;
+    position: relative;
+    font-weight: 600;
+    span {
+        position: relative;
+        z-index: 10;
+    }
+    &:after {
+        content: '';
+        display: inline-block;
+        width: 0;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        transition: all 0.3s ease;
+        background-color: $color-blue-light;
+        z-index: 9;
+    }
+    
+    &.btn-primary {
+        background: $color-blue-main;
+        &:hover {
+            &:after {
+                width: 100%;
+            }
 
+        }
+    }
 }
+
 
 a {
     transition: all 0.3s ease;

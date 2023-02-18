@@ -1,25 +1,34 @@
-// Swiper initialize //
-
+/*Swiper initialize
+**************************************/
 const swiper = new Swiper('.swiper', {
-    // Optional parameters
     direction: "horizontal",
     loop: true,
-    effect: "fade" ,
-    autoplay: false,
-  
-    // If we need pagination
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false
+    },
+    effect: "fade",
+    speed: 1000,
     pagination: {
       el: '.swiper-pagination',
     },
   
-    // Navigation arrows
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     }
   });
 
-  //End swiper//
 
-  //Update copy automatically
+/*Update copy automatically
+**************************************************/
 document.querySelector(".year-copy").innerText = new Date().getFullYear();
+
+/*Light Gallery
+*********************************************/
+lightGallery(document.getElementById('animated-thumbnails-gallery'), {
+  plugins: [lgZoom, lgThumbnail],
+  //licenseKey: 'your_license_key',
+  speed: 500,
+  // ... other settings
+});

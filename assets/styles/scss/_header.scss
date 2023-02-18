@@ -63,17 +63,18 @@ header {
             flex-grow: inherit;
             .nav-item {
                 &:not(:last-child) {
-                    margin-right: 2rem;
+                    margin-right: 1.8rem;
                 }
                 .nav-link{
-                    font-size: 1.8rem;
+                    font-size: 1.7rem;
                     color:#ffffff;
                     letter-spacing: -0.02em;
+                    font-weight: 300;
                 }
 
                 &.contact-us {
                     background-color: $color-whatsapp;
-                    padding: .2rem 1.6rem;
+                    padding: .2rem 1.4rem;
                     display: flex;
                     align-items: center;
                     border-radius: 2rem;
