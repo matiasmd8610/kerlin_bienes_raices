@@ -26,9 +26,22 @@ document.querySelector(".year-copy").innerText = new Date().getFullYear();
 
 /*Light Gallery
 *********************************************/
-lightGallery(document.getElementById('animated-thumbnails-gallery'), {
+document.querySelectorAll('.gallery-container').forEach((element, index) => {
+  //console.log(`Current index: ${index}`);
+  //console.log(element);
+  lightGallery(document.getElementById(element.getAttribute('id')), {
+    plugins: [lgZoom, lgThumbnail],
+    //licenseKey: 'your_license_key',
+    speed: 500,
+    // ... other settings
+  });
+});
+
+
+
+/* lightGallery(document.getElementById('animated-thumbnails-gallery-02'), {
   plugins: [lgZoom, lgThumbnail],
   //licenseKey: 'your_license_key',
   speed: 500,
   // ... other settings
-});
+}); */
