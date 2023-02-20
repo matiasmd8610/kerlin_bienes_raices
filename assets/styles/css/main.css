@@ -12855,12 +12855,15 @@ header .navbar-brand img {
 }
 @media (min-width: 992px) {
   .loteo .loteo__barrio .loteo__barrio--lotes div .lote {
-    width: 55%;
+    width: 60%;
   }
 }
 .loteo .loteo__barrio .loteo__barrio--estado {
   width: 100%;
   display: flex;
+}
+.loteo .loteo__barrio .loteo__barrio--estado p:nth-child(1) {
+  margin-right: 1rem;
 }
 .loteo .loteo__barrio .loteo__barrio--estado p:nth-child(2) {
   color: red;
@@ -12869,7 +12872,7 @@ header .navbar-brand img {
   text-decoration: none;
 }
 .loteo .loteo__barrio span {
-  margin-right: 0.5rem;
+  margin-right: 1rem;
 }
 .loteo .barrio__fotos {
   width: 100%;
