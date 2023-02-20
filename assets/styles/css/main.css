@@ -12495,10 +12495,11 @@ strong {
 .detalle:after {
   content: "";
   display: block;
-  border: solid 2px;
   background-color: rgb(32, 57, 111);
   width: 90px;
+  height: 4px;
   transform: translateY(10px);
+  margin-bottom: 25px;
 }
 
 h1, .h1,
@@ -12823,6 +12824,12 @@ header .navbar-brand img {
   align-items: flex-start;
   padding-top: 20px;
   gap: 20px;
+}
+.loteo .loteo__barrio .loteo__barrio--titulo h3, .loteo .loteo__barrio .loteo__barrio--titulo .h3 {
+  font-size: 2.1rem;
+}
+.loteo .loteo__barrio .loteo__barrio--titulo a {
+  margin-left: 27px;
 }
 .loteo .loteo__barrio .loteo__barrio--lotes {
   width: 100%;

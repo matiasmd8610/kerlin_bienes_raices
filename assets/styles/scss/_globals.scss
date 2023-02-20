@@ -75,10 +75,11 @@ strong {
 .detalle:after {
     content: "";
     display: block;
-    border:solid 2px;
     background-color: $color-blue-main;
     width: 90px;
+    height: 4px;
     transform: translateY(10px);
+    margin-bottom: 25px;
 }
 
 
