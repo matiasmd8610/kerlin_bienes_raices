@@ -12822,7 +12822,7 @@ header .navbar-brand img {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding-top: 20px;
+  margin-bottom: 30px;
   gap: 20px;
 }
 .loteo .loteo__barrio .loteo__barrio--titulo h3, .loteo .loteo__barrio .loteo__barrio--titulo .h3 {
