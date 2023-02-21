@@ -110,50 +110,65 @@
         border-radius: 0;
         height: 0.5rem;
         background-color: #fff;
+        opacity: 0.3;
+        &-active {
+            opacity: 1;
+        }
     }
 
   }
 
-.loteo{
-    // display: flex;
-    // flex-direction: column;
-    // justify-content: center;
-    // align-items: center;
-    // width: 100%;
-        
-    
-    // @include media-breakpoint-up(md) {
-    //     flex-direction: row;
-    //     justify-content: center;
-    //     align-items: center;
-    // }
+/*SECTION LOTEOS
+*******************************************/
+.loteo {
+    &:nth-child(2n+1) {
+        background-color: #f5f5f5;
+    }
 
     padding: 5rem 0;
 
-    .loteo__barrio{
+    .loteo__barrio {
         width: 100%;
         display:flex;
-        flex-direction:column;
-        align-items:flex-start;
-        margin-bottom: 30px;
-        gap:20px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        height: 100%;
 
-        .loteo__barrio--titulo{
+        .loteo__barrio--titulo {
 
-            h3{
-                font-size: 2.1rem;
+            h2 {
+                padding-bottom: .5rem;
+                &:after {
+                    content: "";
+                    display: block;
+                    background-color: $color-blue-main;
+                    width: 75px;
+                    height: 3px;
+                    transform: translateY(10px);
+                    margin-bottom: 25px;
+                }
+        
             }
 
-            a{
+            h3 {
+                font-size: 2.1rem;
+                span {
+                    margin-right: 1rem;
+                }
+            }
+
+            a {
                 margin-left: 27px;
+                font-weight: 600;
             }
             
         }
 
-        .loteo__barrio--lotes{
+        .loteo__barrio--lotes {
             width: 100%;
-            border-top: solid 1px gray;
-            border-bottom: solid 1px gray;
+            border-top: solid 1px rgba(32, 57, 111, 0.3);
+            border-bottom: solid 1px rgba(32, 57, 111, 0.3);
             padding: 20px 0px;
 
             div {
@@ -182,23 +197,26 @@
             width: 100%;
             display: flex;
 
-                p:nth-child(1){
+                strong {
                     margin-right: 1rem;
                 }
 
-                p:nth-child(2){
-                    color:red
+                .state {
+                    color:red;
+                    font-weight: 700;
                 }
         }
-        .loteo__barrio--masInfo a{
-            text-decoration: none;
 
+        .loteo__barrio--masInfo {
+            margin-top: auto;
         }
-        span{
+
+        span {
             margin-right: 1rem; 
         }
         
     }
+
     .barrio__fotos{
         width: 100%;
         height:100%;
@@ -211,6 +229,8 @@
             height: 100%;
             a {
                 cursor: pointer;
+                display: block;
+                max-height: 500px;
                 &:hover {
                     opacity: 0.8;
                 }
@@ -220,15 +240,49 @@
             }
         }
 
-        img{
+        img {
             width: 100%;
             height: 100%;
-            
-            background-size: cover;
+            object-fit: cover;
+            object-position: center center;
         }
     }
 
     
+}
+
+/*CONTACT FORM
+****************************************/
+.formulario {
+    background-color: #E6E6E6;
+
+    .tituloFormulario{
+        text-align: center;
+        margin: 3rem 0;
+        
+        p{
+            font-size: 1.6rem;
+            @include media-breakpoint-up(md) {
+                font-size: 2.1rem;  
+            }
+        }
+    }
+
+    .form-group {
+        margin-bottom: 2.5rem;
+
+        .form-control{
+            border-radius: 0;
+            padding: 0.75rem 1rem;
+            font-size: 1.6rem;
+        }
+
+        textarea {
+            height: 172px;
+        }
+    
+    }
+
 }
 
 
