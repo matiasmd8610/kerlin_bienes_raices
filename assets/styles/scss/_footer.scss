@@ -65,7 +65,7 @@ footer {
     }
 
     .maps {
-        height: 420px;
+        height: 450px;
 
         iframe {
             width: 100%;
@@ -126,7 +126,7 @@ footer {
         position: fixed;
         right: 2rem;
         bottom: 2rem;
-        z-index: 9999;
+        z-index: 100;
         width: 6rem;
         height: 6rem;
         a {

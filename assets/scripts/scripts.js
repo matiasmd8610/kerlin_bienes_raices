@@ -27,12 +27,16 @@ document.querySelector(".year-copy").innerText = new Date().getFullYear();
 /*Light Gallery
 *********************************************/
 document.querySelectorAll('.gallery-container').forEach((element, index) => {
-  //console.log(`Current index: ${index}`);
-  //console.log(element);
   lightGallery(document.getElementById(element.getAttribute('id')), {
     plugins: [lgZoom, lgThumbnail],
     //licenseKey: 'your_license_key',
-    speed: 500,
+    speed: 1000,
+    download: false,
+    allowMediaOverlap: true,
+    mobileSettings: {
+      controls: false,
+      showCloseIcon: true
+    }
     // ... other settings
   });
 });

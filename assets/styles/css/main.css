@@ -12595,7 +12595,7 @@ footer .masInfo .masInfo__datos .masInfo__datos--Whatsapp {
   }
 }
 footer .maps {
-  height: 420px;
+  height: 450px;
 }
 footer .maps iframe {
   width: 100%;
@@ -12644,7 +12644,7 @@ footer .footer-widget {
   position: fixed;
   right: 2rem;
   bottom: 2rem;
-  z-index: 9999;
+  z-index: 100;
   width: 6rem;
   height: 6rem;
 }
@@ -12893,7 +12893,7 @@ header .navbar-brand img {
   font-size: 2.1rem;
 }
 .loteo .loteo__barrio .loteo__barrio--titulo h3 i, .loteo .loteo__barrio .loteo__barrio--titulo .h3 i {
-  margin-right: 1rem;
+  margin-right: 0.6rem;
 }
 .loteo .loteo__barrio .loteo__barrio--titulo a {
   margin-left: 27px;
