@@ -1,3 +1,10 @@
+/*Sticky header
+*****************************************************/
+window.addEventListener('scroll', function () {
+  var header = document.querySelector('header');
+  header.classList.toggle("sticky", window.scrollY > 0);
+});
+
 /*Swiper initialize
 **************************************/
 const swiper = new Swiper('.swiper', {
@@ -42,10 +49,15 @@ document.querySelectorAll('.gallery-container').forEach((element, index) => {
 });
 
 
-
-/* lightGallery(document.getElementById('animated-thumbnails-gallery-02'), {
-  plugins: [lgZoom, lgThumbnail],
-  //licenseKey: 'your_license_key',
-  speed: 500,
-  // ... other settings
-}); */
+/*Header anchor links
+*********************************************/
+$(document).ready(function(){
+  $('header li a[href^="#"]').on('click',function (e) {
+      e.preventDefault();
+      var target = this.hash,
+      $target = $(target);
+      $('html, body').stop().animate({
+          'scrollTop': $target.offset().top - 70
+      }, 500, 'swing');
+  });
+}); 

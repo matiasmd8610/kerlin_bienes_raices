@@ -154,7 +154,7 @@
             h3 {
                 font-size: 2.1rem;
                 i {
-                    margin-right: .6rem;
+                    margin-right: 1.2rem;
                 }
             }
 
@@ -169,7 +169,7 @@
             width: 100%;
             border-top: solid 1px rgba(32, 57, 111, 0.3);
             border-bottom: solid 1px rgba(32, 57, 111, 0.3);
-            padding: 20px 0px;
+            padding: 20px 0px 1rem;
 
             div {
                 display: flex;
@@ -202,8 +202,13 @@
                 }
 
                 .state {
-                    color:red;
                     font-weight: 700;
+                    &.in-progress {
+                        color:#ff0000;
+                    }
+                    &.available {
+                        color: $color-available;
+                    }
                 }
         }
 
@@ -220,8 +225,7 @@
     .barrio__fotos{
         width: 100%;
         height:100%;
-        
-        background-color: aqua;
+        border: 5px solid $color-blue-main;
         overflow: hidden;
 
         .gallery-container {
@@ -232,7 +236,7 @@
                 cursor: pointer;
                 display: block;
                 //max-height: 500px;
-                border: 5px solid $color-blue-main;
+
                 img {
                     transition: all 0.3s ease;
                 }
