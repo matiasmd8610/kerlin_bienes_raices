@@ -113,3 +113,22 @@ h2 {
     }
 
 }
+
+
+#progress-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 4px;
+    transition: width 0.5s linear;
+    z-index: 9999;
+    background-color: $color-blue-main;
+    width: 100%;
+    span {
+        background-color: #4CAF50;
+        display: block;
+        width: 0;
+        height: 100%;
+    }
+}

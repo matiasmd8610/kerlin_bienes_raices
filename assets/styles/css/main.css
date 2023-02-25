@@ -12534,6 +12534,24 @@ h2, .h2 {
   }
 }
 
+#progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 4px;
+  transition: width 0.5s linear;
+  z-index: 9999;
+  background-color: #20396f;
+  width: 100%;
+}
+#progress-bar span {
+  background-color: #4CAF50;
+  display: block;
+  width: 0;
+  height: 100%;
+}
+
 footer .masInfo {
   display: flex;
   flex-direction: column;
@@ -12678,7 +12696,7 @@ header.sticky {
   background: rgba(0, 0, 0, 0.92);
   position: fixed;
   z-index: 999;
-  top: 0;
+  top: 4px;
   width: 100%;
 }
 header.sticky .navbar-brand img {
