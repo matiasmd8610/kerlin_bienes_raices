@@ -18,6 +18,7 @@
   <link type="text/css" rel="stylesheet" href="assets/styles/css/lightgallery-bundle.css">
   <link rel="stylesheet" href="assets/styles/css/main.css">
   <title>Kerlin Bienes Raíces - Lotes</title>
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 
 <body>
@@ -91,7 +92,7 @@
       <div class="loteo">
         <div class="container">
           <div class="row">
-            <div class="  col-xs-12 col-lg-5">
+            <div class="col-lg-6">
               <div class="loteo__barrio">
                 <div class="loteo__barrio--titulo">
                   <h2>El Portal 2</h2>
@@ -99,30 +100,21 @@
                   <a href="">Ver en Google Maps</a>
                 </div>
                 <div class="loteo__barrio--lotes">
-                  <div>
-                    <p class="lote"><span class="fa-solid fa-arrow-right"></span>Lote 4 (20x48 mts)</p>
-                    <p><b>u$85.000</b></p>
-                  </div>
-                  <div>
-                    <p class="lote"><span class="fa-solid fa-arrow-right"></span>Lote 14 (20x48 mts)</p>
-                    <p><b>u$85.000</b></p>
-                  </div>
-                  <div>
-                    <p class="lote"><span class="fa-solid fa-arrow-right"></span>Lote 24 (20x48 mts)</p>
-                    <p><b>u$85.000</b></p>
-                  </div>
-                  <div>
-                    <p class="lote"><span class="fa-solid fa-arrow-right"></span>Lote 34 (20x48 mts)</p>
-                    <p><b>u$85.000</b></p>
-                  </div>
-                  <div>
-                    <p class="lote"><span class="fa-solid fa-arrow-right"></span>Lote 104 (20x48 mts)</p>
-                    <p><b>u$85.000</b></p>
-                  </div>
+                  <p>El loteo se emplaza en las tierras de lo que fuera la quinta de la familia Nozzi, contigua a la quinta de la familia Ponte (otra familia tradicional de la ciudad) y al barrio que lleva su nombre. Este barrio se caracteriza por sus modernas construcciones en amplios terrenos, en un entorno extremadamente tranquilo, donde la vida alrededor de la naturaleza y juegos de niños al aire libre es una constante. El barrio posee dos zonas bien marcadas y definidas: sobre Av. Ponce de León, es una zona netamente comercial y disponible para desarrollos multifamiliares; las calles Echague, Hernandarias, Segundo García, Argerich y Las Heras son exclusivamente para residencias unifamiliares. La primera etapa está totalmente vendida, actualmente se inicia la segunda etapa de comercialización.</p>
+                  <ul>
+                    <li><i class="fa-solid fa-arrow-right"></i> 110 lotes desde 360 a 1.000 m2.</li>
+                    <li><i class="fa-solid fa-arrow-right"></i> Apto Dúplex y desarrollos comerciales.</li>
+                    <li><i class="fa-solid fa-arrow-right"></i> Posesión inmediata.</li>
+                    <li><i class="fa-solid fa-arrow-right"></i> Primera etapa totalmente vendida.</li>
+                    <li><i class="fa-solid fa-arrow-right"></i> Segunda etapa, lotes disponibles.</li>
+                  </ul>
                 </div>
                 <div class="loteo__barrio--estado">
-                  <strong>ESTADO:</strong><span class="state in-progress"><i class="fa-solid fa-person-digging"></i> En
+                  <strong>ESTADO:</strong><span class="state in-progress"><i class="fa-solid fa-person-digging"></i>En
                     construcción</span>
+                </div>
+                <div class="loteo__barrio--financiacion">
+                  <strong>FINANCIACIÓN:</strong>
                 </div>
                 <div class="loteo__barrio--masInfo">
                   <a href="#" class="btn btn-primary mt-2">
@@ -131,7 +123,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-xs-12 col-lg-7">
+            <div class="col-lg-6">
               <div class="barrio__fotos">
                 <div class="gallery-container" id="animated-thumbnails-gallery">
                   <a href="assets/images/gallery/el_portal_2/calles.jpeg" class="gallery-item">
@@ -199,6 +191,28 @@
                       src="https://images.unsplash.com/photo-1508766206392-8bd5cf550d1c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=240&q=80" />
                   </a>
                 </div>
+              </div>
+              <div class="loteo__prices">
+                <div>
+                    <p class="lote"><i class="fa-solid fa-arrow-right"></i>Lote 4 (20x48 mts)</p>
+                    <p><b>u$85.000</b></p>
+                  </div>
+                  <div>
+                    <p class="lote"><i class="fa-solid fa-arrow-right"></i>Lote 14 (20x48 mts)</p>
+                    <p><b>u$85.000</b></p>
+                  </div>
+                  <div>
+                    <p class="lote"><i class="fa-solid fa-arrow-right"></i>Lote 24 (20x48 mts)</p>
+                    <p><b>u$85.000</b></p>
+                  </div>
+                  <div>
+                    <p class="lote"><i class="fa-solid fa-arrow-right"></i>Lote 34 (20x48 mts)</p>
+                    <p><b>u$85.000</b></p>
+                  </div>
+                  <div>
+                    <p class="lote"><i class="fa-solid fa-arrow-right"></i>Lote 104 (20x48 mts)</p>
+                    <p><b>u$85.000</b></p>
+                  </div>
               </div>
             </div>
           </div>
@@ -335,23 +349,31 @@
           <p>Para más información completa el formulario de consultas</p>
         </div>
 
-        <form class="row" id="contact-form" action="send_mail.php" method="POST">
+        <form class="row" id="contact-form" action="phpmailer.php" method="post" enctype="multipart/form-data">
           <div class="col-lg-6 col-sm-12">
             <div class="form-group">
               <input type="text" class="form-control" id="name" name="name" placeholder="Nombre y Apellido">
+              <div id="name-error" class="error-msg">Nombre inválido</div>
             </div>
             <div class="form-group">
-              <input type="tel" class="form-control" id="name" name="name" placeholder="Teléfono">
+              <input type="tel" class="form-control" id="telephone" name="telephone" placeholder="Teléfono">
+              <div id="telephone-error" class="error-msg">E-mail inválido</div>
             </div>
             <div class="form-group">
               <input type="email" class="form-control" id="email" name="email" placeholder="Email">
+              <div id="email-error" class="error-msg">E-mail inválido</div>
             </div>
           </div>
           <div class="col-lg-6 col-sm-12">
             <div class="form-group">
-              <!-- <label for="comment">Escriba su consulta <sup>*</sup></label> -->
-              <textarea class="form-control" id="comment" name="comment" rows="7" placeholder="Mensaje"></textarea>
+              <textarea class="form-control" id="message" name="message" rows="7" placeholder="Mensaje"></textarea>
+              <div id="message-error" class="error-msg">La consulta no puede quedar vacía</div>
             </div>
+          </div>
+          <div>
+            <div class="form-group">
+              <div class="g-recaptcha" data-sitekey="xxxxxxxxxxxxxxxxxxxxxxx"></div>
+          </div>
           </div>
           <div class="col-lg-6 col-sm-12">
             <div class="form-group">
@@ -447,6 +469,62 @@
   <script src="assets/scripts/plugins/zoom/lg-zoom.min.js"></script>
   <script src="assets/scripts/plugins/thumbnail/lg-thumbnail.min.js"></script>
   <script src="assets/scripts/scripts.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script>
+  <script>
+    const constraints = {
+      name: {
+        presence: {
+          allowEmpty: false,
+        }
+      },
+      telephone: {
+        presence: {
+          allowEmpty: false
+        }
+      },
+      email: {
+        presence: {
+          allowEmpty: false
+        },
+        email: true
+      },
+      message: {
+        presence: {
+          allowEmpty: false
+        }
+      }
+    };
+
+    const form = document.getElementById('contact-form');
+
+    form.addEventListener('submit', function (event) {
+      const formValues = {
+        name: form.elements.name.value,
+        telephone: form.elements.telephone.value,
+        email: form.elements.email.value,
+        message: form.elements.message.value
+      };
+
+      const errors = validate(formValues, constraints);
+
+      if (errors) {
+        event.preventDefault();
+
+        document.querySelectorAll('.error-msg').forEach((element, index) => {
+          element.classList.remove('visible');
+        });
+
+        Object.keys(errors).forEach(key => {
+          document.querySelector(`#${key}-error`).classList.add('visible');
+        });
+
+      }
+    }, false);
+
+    function onRecaptchaSuccess() {
+      document.getElementById('contact-form').submit();
+    }
+  </script>
   <!-- SCRIPTS: End -->
 
 </body>

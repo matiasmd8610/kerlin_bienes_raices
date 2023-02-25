@@ -12431,7 +12431,7 @@ html {
 body {
   font-family: "Montserrat", sans-serif;
   font-size: 1.6rem;
-  line-height: 1.3;
+  line-height: 1.5;
   color: #333;
 }
 
@@ -12441,7 +12441,7 @@ body {
   border: none;
   text-decoration: none;
   transition: all 0.3s ease;
-  margin: 1rem 0;
+  margin: 1rem 0 0;
   font-size: 1.7rem;
   text-transform: uppercase;
   display: flex;
@@ -12451,10 +12451,11 @@ body {
   position: relative;
   font-weight: 600;
   border-radius: 0px;
+  width: 100%;
 }
 @media (min-width: 768px) {
   .btn {
-    width: 280px;
+    width: 270px;
   }
 }
 .btn span {
@@ -12673,7 +12674,7 @@ footer .footer-widget a img {
 }
 
 header.sticky {
-  box-shadow: 0px 0px 6px #555;
+  box-shadow: 0px 0px 6px #333;
   background: rgba(0, 0, 0, 0.92);
   position: fixed;
   z-index: 999;
@@ -12697,6 +12698,22 @@ header .navbar .navbar-collapse .nav-item .nav-link {
   color: #ffffff;
   letter-spacing: -0.02em;
   font-weight: 300;
+  position: relative;
+}
+header .navbar .navbar-collapse .nav-item .nav-link:hover:after {
+  width: 85%;
+}
+header .navbar .navbar-collapse .nav-item .nav-link:after {
+  content: "";
+  display: block;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  position: absolute;
+  transition: all 0.3s ease;
+  background-color: #fff;
+  height: 1px;
+  bottom: 1px;
 }
 header .navbar .navbar-collapse .nav-item.contact-us {
   background-color: #25D366;
@@ -12706,9 +12723,16 @@ header .navbar .navbar-collapse .nav-item.contact-us {
   align-items: center;
   border-radius: 2rem;
   width: fit-content;
+  transition: all 0.3s ease;
+}
+header .navbar .navbar-collapse .nav-item.contact-us:hover {
+  background-color: #009688;
 }
 header .navbar .navbar-collapse .nav-item.contact-us a {
   font-weight: 400;
+}
+header .navbar .navbar-collapse .nav-item.contact-us a:after {
+  display: none;
 }
 header .navbar .navbar-collapse .nav-item.contact-us i {
   margin-right: 1rem;
@@ -12758,6 +12782,7 @@ header .navbar-brand img {
   color: #fff;
   font-size: 4.4rem;
   margin-bottom: 0.5rem;
+  text-align: center;
 }
 @media (min-width: 1200px) {
   .swiper .swiper-slide--content h2, .swiper .swiper-slide--content .h2 {
@@ -12839,8 +12864,15 @@ header .navbar-brand img {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 20px;
   height: 100%;
+}
+@media (min-width: 992px) {
+  .loteo .loteo__barrio {
+    padding-right: 2rem;
+  }
+}
+.loteo .loteo__barrio .loteo__barrio--titulo {
+  padding-bottom: 2rem;
 }
 .loteo .loteo__barrio .loteo__barrio--titulo h2, .loteo .loteo__barrio .loteo__barrio--titulo .h2 {
   padding-bottom: 0.5rem;
@@ -12870,30 +12902,27 @@ header .navbar-brand img {
   border-bottom: solid 1px rgba(32, 57, 111, 0.3);
   padding: 20px 0px 1rem;
 }
-.loteo .loteo__barrio .loteo__barrio--lotes div {
+.loteo .loteo__barrio .loteo__barrio--lotes p {
+  text-align: justify;
+}
+.loteo .loteo__barrio .loteo__barrio--lotes ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 2rem;
+}
+.loteo .loteo__barrio .loteo__barrio--lotes ul li {
   display: flex;
+  align-items: center;
+  line-height: 1.5;
+  margin-bottom: 1rem;
 }
-.loteo .loteo__barrio .loteo__barrio--lotes div .lote {
-  width: 70%;
-}
-@media (min-width: 576px) {
-  .loteo .loteo__barrio .loteo__barrio--lotes div .lote {
-    width: 50%;
-  }
-}
-@media (min-width: 768px) {
-  .loteo .loteo__barrio .loteo__barrio--lotes div .lote {
-    width: 40%;
-  }
-}
-@media (min-width: 992px) {
-  .loteo .loteo__barrio .loteo__barrio--lotes div .lote {
-    width: 60%;
-  }
+.loteo .loteo__barrio .loteo__barrio--lotes ul li i {
+  margin-right: 1rem;
 }
 .loteo .loteo__barrio .loteo__barrio--estado {
   width: 100%;
   display: flex;
+  margin: 2rem 0 0;
 }
 .loteo .loteo__barrio .loteo__barrio--estado strong {
   margin-right: 1rem;
@@ -12901,16 +12930,48 @@ header .navbar-brand img {
 .loteo .loteo__barrio .loteo__barrio--estado .state {
   font-weight: 700;
 }
+.loteo .loteo__barrio .loteo__barrio--estado .state i {
+  margin-right: 0.5rem;
+}
 .loteo .loteo__barrio .loteo__barrio--estado .state.in-progress {
   color: #ff0000;
 }
 .loteo .loteo__barrio .loteo__barrio--estado .state.available {
   color: #1CCB00;
 }
+.loteo .loteo__barrio .loteo__barrio--financiacion {
+  margin: 1rem 0 2rem;
+  border-bottom: solid 1px rgba(32, 57, 111, 0.3);
+  width: 100%;
+  padding-bottom: 2rem;
+}
 .loteo .loteo__barrio .loteo__barrio--masInfo {
   margin-top: auto;
 }
-.loteo .loteo__barrio span {
+.loteo .loteo__prices {
+  margin-top: 3rem;
+  padding: 2rem;
+  background-color: #E6E6E6;
+}
+.loteo .loteo__prices div {
+  display: flex;
+}
+.loteo .loteo__prices div .lote {
+  width: 50%;
+  /* @include media-breakpoint-up(sm) {
+      width: 50%;  
+
+  }
+  @include media-breakpoint-up(md) {
+      width: 40%;  
+
+  }
+  @include media-breakpoint-up(lg) {
+      width: 60%;  
+
+  } */
+}
+.loteo .loteo__prices div .lote i {
   margin-right: 1rem;
 }
 .loteo .barrio__fotos {
@@ -12918,6 +12979,7 @@ header .navbar-brand img {
   height: 100%;
   border: 5px solid #20396f;
   overflow: hidden;
+  max-height: 500px;
 }
 .loteo .barrio__fotos .gallery-container {
   width: 100%;
@@ -12970,7 +13032,7 @@ header .navbar-brand img {
 }
 .formulario .tituloFormulario {
   text-align: center;
-  margin: 3rem 0;
+  margin: 3rem 0 4rem;
 }
 .formulario .tituloFormulario p {
   font-size: 1.6rem;
@@ -12980,16 +13042,25 @@ header .navbar-brand img {
     font-size: 2.1rem;
   }
 }
+.formulario .error-msg {
+  color: #f00000;
+  font-size: 14px;
+  padding-top: 5px;
+  display: none;
+}
+.formulario .error-msg.visible {
+  display: block;
+}
 .formulario .form-group {
   margin-bottom: 2.5rem;
 }
 .formulario .form-group .form-control {
   border-radius: 0;
-  padding: 0.75rem 1rem;
+  padding: 0.85rem 1rem;
   font-size: 1.6rem;
 }
 .formulario .form-group textarea {
-  height: 172px;
+  height: 178px;
 }
 
 /*# sourceMappingURL=main.css.map */

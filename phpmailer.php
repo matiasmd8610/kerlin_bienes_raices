@@ -12,21 +12,22 @@ require 'phpmailer/Exception.php';
 require 'phpmailer/SMTP.php';
 
 $name = $_POST['name'];
+$telephone = $_POST['telephone'];
 $email = $_POST['email'];
-$comment = $_POST['comment'];
+$message = $_POST['message'];
 $subject = 'Mensaje recibido desde lucioteposiciona.com';
 
-$recaptcha_secret = "6LeAjmAhAAAAAA5DwU7YQYB40Le54jvXITMDEkfj";
+$recaptcha_secret = "xxxxxxxxxxxxxxxxxxxxxxxx"; //Add secret key
 $response = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=".$recaptcha_secret."&response=".$_POST['g-recaptcha-response']);
 $response = json_decode($response, true);
 
 if( empty(trim($name)) ) $name = 'anonimo';
 
 $body = <<<HTML
-    <h1>Mensaje recibido desde lucioteposiciona.com</h1>
-    <p>De: $name | $email</p>
+    <h1>Mensaje recibido desde loteskerlin.com.ar</h1>
+    <p>De: $name | $email | $telephone</p>
     <!-- <h2>Mensaje:</h2> -->
-    $comment
+    $message
 HTML;
 
 $mailer = new PHPMailer(true);

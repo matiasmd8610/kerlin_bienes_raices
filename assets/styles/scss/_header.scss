@@ -1,6 +1,6 @@
 header {
     &.sticky {
-        box-shadow: 0px 0px 6px #555;
+        box-shadow: 0px 0px 6px #333;
         background: rgb(0, 0, 0, 92%);
         position: fixed;
         z-index: 999;
@@ -16,12 +16,10 @@ header {
 
     .navbar{
         background-color: $color-blue-main;
-        // height: 145px;
-        // se me jode el menu hamburguesa
-
 
         .navbar-collapse {
             flex-grow: inherit;
+
             .nav-item {
                 &:not(:last-child) {
                     margin-right: 1.8rem;
@@ -31,6 +29,24 @@ header {
                     color:#ffffff;
                     letter-spacing: -0.02em;
                     font-weight: 300;
+                    position: relative;
+                    &:hover {
+                        &:after {
+                            width: 85%;
+                        }
+                    }
+                    &:after {
+                        content: '';
+                        display: block;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        width: 0;
+                        position: absolute;
+                        transition: all 0.3s ease;
+                        background-color: #fff;
+                        height: 1px;
+                        bottom: 1px;
+                    }
                 }
 
                 &.contact-us {
@@ -41,8 +57,15 @@ header {
                     align-items: center;
                     border-radius: 2rem;
                     width: fit-content;
+                    transition: all 0.3s ease;
+                    &:hover {
+                        background-color: #009688;
+                    }
                     a {
                         font-weight: 400;
+                        &:after {
+                            display: none;
+                        }
                     }
                     i {
                         margin-right: 1rem;
