@@ -5,7 +5,7 @@
     height: auto;
 
     .swiper-slide {
-        height: 600px;
+        height: 480px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -13,6 +13,9 @@
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
+        @include media-breakpoint-up(lg) {
+            height: 600px;
+        }
 
         &:after {
             content: '';
@@ -31,12 +34,15 @@
             align-items: center;
             justify-content: center;
             flex-direction: column;
-            max-width: 80%;
+            max-width: 70%;
             transform: translateY(-2rem);
+            @include media-breakpoint-up(lg) {
+                max-width: 80%;
+            }
 
             h2 {
                 color: #fff;
-                font-size: 4.4rem;
+                font-size: 3.6rem;
                 margin-bottom: 0.5rem;
                 text-align: center;
                 @include media-breakpoint-up(xl) {
@@ -48,13 +54,14 @@
             h3 {
                 color: #fff;
                 font-size: 2.2rem;
+                text-align: center;
                 @include media-breakpoint-up(xl) {
                     font-size: 3.5rem;
                 }
             }
 
             .btn {
-                min-width: 350px;
+                min-width: 330px;
             }
         }
 
@@ -80,7 +87,7 @@
         transform: translateY(-50%);
         &:hover {
             &:after {
-                color: $color-blue-light;
+                //color: $color-blue-light;
             }
         }
         &:after {
@@ -363,6 +370,30 @@
         }
     
     }
+
+}
+
+/*THANK YOU
+************************************************/
+.thank-you{
+    padding: 15rem 0;
+    text-align: center;
+
+    & > .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .btn {
+            margin-top: 2rem;
+        }
+    }
+
+    h1 {
+        color: $color-blue-main;
+    }
+
 
 }
 

@@ -12516,7 +12516,7 @@ h2,
 }
 
 h1, .h1 {
-  font-size: 5rem;
+  font-size: 3.8rem;
   color: #fff;
 }
 @media (min-width: 768px) {
@@ -12768,7 +12768,7 @@ header .navbar-brand img {
   height: auto;
 }
 .swiper .swiper-slide {
-  height: 600px;
+  height: 480px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -12776,6 +12776,11 @@ header .navbar-brand img {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+@media (min-width: 992px) {
+  .swiper .swiper-slide {
+    height: 600px;
+  }
 }
 .swiper .swiper-slide:after {
   content: "";
@@ -12793,12 +12798,17 @@ header .navbar-brand img {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  max-width: 80%;
+  max-width: 70%;
   transform: translateY(-2rem);
+}
+@media (min-width: 992px) {
+  .swiper .swiper-slide--content {
+    max-width: 80%;
+  }
 }
 .swiper .swiper-slide--content h2, .swiper .swiper-slide--content .h2 {
   color: #fff;
-  font-size: 4.4rem;
+  font-size: 3.6rem;
   margin-bottom: 0.5rem;
   text-align: center;
 }
@@ -12810,6 +12820,7 @@ header .navbar-brand img {
 .swiper .swiper-slide--content h3, .swiper .swiper-slide--content .h3 {
   color: #fff;
   font-size: 2.2rem;
+  text-align: center;
 }
 @media (min-width: 1200px) {
   .swiper .swiper-slide--content h3, .swiper .swiper-slide--content .h3 {
@@ -12817,7 +12828,7 @@ header .navbar-brand img {
   }
 }
 .swiper .swiper-slide--content .btn {
-  min-width: 350px;
+  min-width: 330px;
 }
 .swiper .swiper-slide.slide-01 {
   background-image: url("../../images/slide_01_bg.JPG");
@@ -12835,9 +12846,6 @@ header .navbar-brand img {
   place-items: center;
   top: 50%;
   transform: translateY(-50%);
-}
-.swiper-button-prev:hover:after, .swiper-button-next:hover:after {
-  color: #4764a3;
 }
 .swiper-button-prev:after, .swiper-button-next:after {
   transition: all 0.3s ease;
@@ -13079,6 +13087,25 @@ header .navbar-brand img {
 }
 .formulario .form-group textarea {
   height: 178px;
+}
+
+/*THANK YOU
+************************************************/
+.thank-you {
+  padding: 15rem 0;
+  text-align: center;
+}
+.thank-you > .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.thank-you > .container .btn {
+  margin-top: 2rem;
+}
+.thank-you h1, .thank-you .h1 {
+  color: #20396f;
 }
 
 /*# sourceMappingURL=main.css.map */

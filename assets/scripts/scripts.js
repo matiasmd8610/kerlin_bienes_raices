@@ -7,24 +7,26 @@ window.addEventListener('scroll', function () {
 
 /*Swiper initialize
 **************************************/
-const swiper = new Swiper('.swiper', {
-    direction: "horizontal",
-    loop: true,
-    autoplay: {
-      delay: 2500,
-      disableOnInteraction: false
-    },
-    effect: "fade",
-    speed: 1000,
-    pagination: {
-      el: '.swiper-pagination',
-    },
-  
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    }
+if (document.querySelector('.swiper')) {
+  const swiper = new Swiper('.swiper', {
+      direction: "horizontal",
+      loop: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false
+      },
+      effect: "fade",
+      speed: 1000,
+      pagination: {
+        el: '.swiper-pagination',
+      },
+    
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      }
   });
+}
 
 
 /*Update copy automatically

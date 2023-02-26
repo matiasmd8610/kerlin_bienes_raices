@@ -1,152 +1,123 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Publicidad en buscadores Google Ads">
-  <meta name="keywords" content="SEM, Posicionamiento Web, Google Adwords, Google Ads">
-  <meta name="author" content="Matias Di Iorio - Front End Web Developer">
-  <meta property="og:title" content="Lucio te posiciona">
-  <meta property="og:url" content="https://www.lucioteposiciona.com">
-  <meta property="og:image" content="https://www.lucioteposiciona.com/assets/images/logo.png">
-  <title>Lucio te posiciona | Consultor Google Ads</title>
-  <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300;600;700;800&display=swap" rel="stylesheet">
-  <!-- <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined" rel="stylesheet"> -->
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
-  <link rel="stylesheet" href="assets/css/main.css">
-  <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "ProfessionalService",
-      "name": "Lucio te posiciona",
-      "image": "https://www.lucioteposiciona.com/assets/images/logo.png",
-      "@id": "",
-      "url": "https://www.lucioteposiciona.com",
-      "telephone": "",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "",
-        "addressLocality": "",
-        "postalCode": "",
-        "addressCountry": "AR"
-      }
-    }
-  </script>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-237662616-1"></script>
-  <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-          dataLayer.push(arguments);
-      }
-      gtag('js', new Date());
-
-      gtag('config', 'UA-237662616-1');
-  </script>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+      content="Inmobiliaria en San Nicolás de Los Arroyos. Asesoramiento para la compra y alquiler de tu propiedad. Venta y alquiler de casas, departamentos, locales, cocheras.">
+    <meta name="keywords"
+      content="inmobiliaria en san nicolas de los arroyos, lotes, terrenos, casas, departamentos, permutas, alquileres, venta de propiedades, inmobiliarias san nicolás, ventas, compras, tasaciones, comercial">
+    <link href="assets/images/favicon.png" rel="shortcut icon" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.2.1/css/all.css">
+    <link rel="stylesheet" href="assets/styles/css/main.css">
+    <title>Kerlin Bienes Raíces - Lotes</title>
 </head>
 
 <body>
 
-  <div id="scroll-indicator">
+  <div id="progress-bar">
     <span></span>
   </div>
 
   <!-- HEADER: BEGIN -->
-  <header itemscope itemtype="https://schema.org/WPHeader">
-    <nav class="navbar navbar-expand-lg navbar-light">
+  <header id="header">
+    <h1 class="visually-hidden-focusable">Kerlin Bienes Raíces venta de loteos</h1>
+    <nav class="navbar navbar-expand-lg navbar-dark">
       <div class="container">
-        <a class="navbar-brand" href="/" data-aos="fade-up" data-aos-offset="200" data-aos-delay="150">
-          <img src="./assets/images/logo.png" alt="Lucio te posiciona" width="130">
+        <a class="navbar-brand" href="index.html">
+          <img src="assets/images/logo_kerlin.png" alt="logo Kerlin Bienes Raices" width="126">
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <div class="navbar-toggler-icon">
-            <span></span>
-            <span></span>
-          </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown" data-aos="fade-left" data-aos-offset="500"
-          data-aos-delay="250" data-aos-easing="ease-in">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="mis-servicios.html">Mis Servicios</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/sobre-mi.html">Sobre Mi</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/contacto">Contactame</a>
-            </li>
-            <li class="nav-item wsp">
-              <a class="nav-link" href="https://wa.me/5491138348993?text=Hola!%20Quisiera%20recibir%20información%20sobre%20el%20servicio" target="_blank"><img src="./assets/images/whatsapp_icon.png" alt="Whatsapp" width="35"></a>
-            </li>
-            <li class="nav-item ig">
-              <a class="nav-link" href="https://www.instagram.com/luciolujan89/" target="_blank"><img src="./assets/images/instagram_icon.png" alt="Instagram" width="35"></a>
-            </li>
-            <li class="nav-item in">
-              <a class="nav-link" href="https://www.linkedin.com/in/lucio-lujan" target="_blank"><img src="./assets/images/linkedin_icon.png" alt="LinkedIn" width="35"></a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link " href="index.html#loteos">Loteos</a></li>
+            <li class="nav-item"><a class="nav-link " href="index.html#contact">Contacto</a></li>
+            <li class="nav-item contact-us">
+              <a class="nav-link"
+                href="https://wa.me/5493364191219?text=Hola!%20Quisiera%20recibir%20información%20sobre%20el%20servicio"
+                target="_blank"><i class="fab fa-whatsapp"></i> Contactanos</a>
             </li>
           </ul>
+
         </div>
       </div>
     </nav>
+
   </header>
   <!-- HEADER: END -->
 
   <main id="main">
     <section class="thank-you">
       <div class="container">
-        <h1>¡Gracias por contactarme!</h1>
-        <h2>Me pondré en contacto con usted a la brevedad.</h2>
-        <div class="back-to-home">
-          <a href="/" class="btn btn-primary">Volver al inicio</a>
-        </div>
+        <h1>¡Gracias por contactarnos!</h1>
+        <h2>Nos pondremos en contacto con usted a la brevedad.</h2>
+        <a href="/" class="btn btn-primary"><span>Volver al inicio</span></a>
       </div>
     </section>
   </main>
 
   <!-- FOOTER: BEGIN -->
-  <footer itemscope itemtype="https://schema.org/WPFooter">
-    <div class="container">
-      <div class="footer-logos">
-        <a href="/">
-          <img src="./assets/images/logo.png" alt="Lucio te posiciona" width="125">
+  <footer>
+   
+    <div class="text-center">
+      <img class="logo-footer" src="assets/images/logo_kerlin_rounded.png" alt="Kerlin Bienes Raíces" width="125">
+    </div>
+    <ul class="social-links">
+      <li>
+        <a target="_blank" href="https://www.facebook.com/kerlinbienesraices/"><i class="fa-brands fa-facebook-f"
+            aria-hidden="true"></i></a>
+      </li>
+      <li>
+        <a target="_blank" href="https://www.instagram.com/kerlinbienesraices/"><i class="fa-brands fa-instagram"
+            aria-hidden="true"></i></a>
+      </li>
+      <li>
+        <a target="_blank" href="https://www.youtube.com/channel/UCO_9kE0eTwwPHhsSEK-htsw"><i
+            class="fa-brands fa-youtube" aria-hidden="true"></i></a>
+      </li>
+      <li>
+        <a target="_blank" href="https://www.tiktok.com/@kerlinbienesraices?lang=es"><i class="fa-brands fa-tiktok"
+            aria-hidden="true"></i></a>
+      </li>
+      <li>
+        <a target="_blank" href="https://www.linkedin.com/in/beatriz-kerlin"><i class="fa-brands fa-linkedin-in"
+            aria-hidden="true"></i>
         </a>
-        <a href="https://www.google.com/partners/agency?id=1348420643" target="_blank">
-          <img src="https://www.gstatic.com/partners/badge/images/2022/PartnerBadgeClickable.svg" width="85">
-        </a>
+      </li>
+    </ul>
+    <p class="matriculado">Matriculado Responsable: Beatriz Kerlin - Matricula 1023</p>
+    <div class="copyright">
+      <p class="copy">&copy;<span class="year-copy">2023</span> Todos los derechos reservados.</p>
+    </div>
+
+    <div class="footer-widget">
+      <div class="wwidget-container">
+        <a href="https://wa.me/+5493364191219?text=¡Hola! Quiero saber más información sobre..." target="_blank"
+          class="wwidget-button template-3"><img alt="whatsapp"
+            src="https://d1v2p1s05qqabi.cloudfront.net/vendor/whatsappwidget/whatsapp.svg?v=91"></a>
       </div>
-      <p class="description">Lucio Luján <span>|</span> Consultor Google Adwords <span>|</span> Google Certified</p>
-      <p class="copy">&copy; <span class="year-copy"></span>. Todos los derechos reservados.</p>
-      <a href="#main" class="back-to-top"><i class="material-symbols-outlined">expand_less</i></a>
     </div>
-    <div class="wsp-footer-mobile d-lg-none">
-      <a href="https://wa.me/5491138348993?text=Hola!%20Quisiera%20recibir%20información%20sobre%20el%20servicio"
-        target="_blank">Contactame por <img src="./assets/images/whatsapp_white.png" alt="Whatsapp" width="25"></a>
-    </div>
+
   </footer>
   <!-- FOOTER: END -->
 
 </body>
 
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
-  integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
-  integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script src="./assets/scripts/scripts.js"></script>
-<script>
-  AOS.init();
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
 </script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script src="./assets/scripts/scripts.js"></script>
 
 </html>
