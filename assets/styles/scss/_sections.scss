@@ -144,7 +144,7 @@
         height: 100%;
 
         @include media-breakpoint-up(lg) {
-            padding-right: 2rem;
+            padding-right: 3rem;
         }
 
         .loteo__barrio--titulo {
@@ -235,56 +235,77 @@
             padding-bottom: 2rem;
         }
 
-        .loteo__barrio--masInfo {
+        /* .loteo__barrio--masInfo {
             margin-top: auto;
-        }
+        } */
 
     }
 
     .loteo__prices {
-        margin-top: 3rem;
-        padding: 2rem;
-        background-color: #E6E6E6;
-        div {
-            display: flex;
+        margin-top: 4rem;
+        background-color: #ededed;
+        
+        &--title {
+            background-color: #ccc;
+            padding: 1rem 2rem;
+            font-weight: 700;
+            text-transform: uppercase
+        }
 
-            .lote{
-                width: 50%;
-                i {
-                    margin-right: 1rem; 
-                }
+        &--content {
+            padding: 2rem;
 
-                /* @include media-breakpoint-up(sm) {
-                    width: 50%;  
-                
+            div {
+                display: flex;
+                justify-content: space-between;
+                &:not(:last-child) {
+                    border-bottom: 1px dotted #bbb;
+                    margin-bottom: .7rem;
+                    padding-bottom: .7rem;
                 }
-                @include media-breakpoint-up(md) {
-                    width: 40%;  
-                
+    
+                p {
+                    width: 50%;
+                    margin: 0;
+                    &:last-child {
+                        text-align: right;
+                    }
+                    i {
+                        margin-right: 1rem; 
+                    }
+    
+                    /* @include media-breakpoint-up(sm) {
+                        width: 50%;  
+                    
+                    }
+                    @include media-breakpoint-up(md) {
+                        width: 40%;  
+                    
+                    }
+                    @include media-breakpoint-up(lg) {
+                        width: 60%;  
+                    
+                    } */
                 }
-                @include media-breakpoint-up(lg) {
-                    width: 60%;  
-                
-                } */
             }
         }
     }
 
-    .barrio__fotos{
+    .barrio__fotos {
         width: 100%;
-        height:100%;
         border: 5px solid $color-blue-main;
         overflow: hidden;
-        max-height: 500px;
+        height: 450px;
 
         .gallery-container {
             width: 100%;
             height: 100%;
+
             .gallery-item {
                 position: relative;
                 cursor: pointer;
                 display: block;
-                //max-height: 500px;
+                height: 100%;
 
                 img {
                     transition: all 0.3s ease;

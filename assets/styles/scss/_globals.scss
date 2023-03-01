@@ -17,19 +17,19 @@ body {
     text-decoration: none;
     transition: all 0.3s ease;
     margin: 1rem 0 0;
-    font-size: 1.7rem;
+    font-size: 1.6rem;
     text-transform: uppercase;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 1rem 2.5rem;
+    padding: 1rem 1.6rem;
     position: relative;
     font-weight: 600;
     border-radius: 0px;
     width: 100%;
 
     @include media-breakpoint-up(md) {
-        width: 270px;
+        width: auto;
     }
 
     span {
@@ -54,7 +54,26 @@ body {
             &:after {
                 width: 100%;
             }
+        }
+    }
 
+    &.btn-whatsapp {
+        background-color: $color-whatsapp;
+        border-radius: 2.5rem;
+        overflow: hidden;
+        color: #fff !important;
+        &:after {
+            background-color: #009688;
+        }
+        &:hover {
+            &:after {
+                width: 100%;
+            }
+        }
+        i {
+            margin-right: .7rem;
+            font-size: 2rem;
+            transform: translateY(2px);
         }
     }
 }
@@ -72,10 +91,10 @@ a {
     padding-left: 15px;
     padding-right: 15px;
 
-    .row > * {
+    /* .row > * {
         padding-right: 1.5rem;
         padding-left: 1.5rem;
-    }
+    } */
 }
 
 strong {

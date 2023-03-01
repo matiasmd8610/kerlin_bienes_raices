@@ -12442,12 +12442,12 @@ body {
   text-decoration: none;
   transition: all 0.3s ease;
   margin: 1rem 0 0;
-  font-size: 1.7rem;
+  font-size: 1.6rem;
   text-transform: uppercase;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 1rem 2.5rem;
+  padding: 1rem 1.6rem;
   position: relative;
   font-weight: 600;
   border-radius: 0px;
@@ -12455,7 +12455,7 @@ body {
 }
 @media (min-width: 768px) {
   .btn {
-    width: 270px;
+    width: auto;
   }
 }
 .btn span {
@@ -12479,6 +12479,23 @@ body {
 .btn.btn-primary:hover:after {
   width: 100%;
 }
+.btn.btn-whatsapp {
+  background-color: #25D366;
+  border-radius: 2.5rem;
+  overflow: hidden;
+  color: #fff !important;
+}
+.btn.btn-whatsapp:after {
+  background-color: #009688;
+}
+.btn.btn-whatsapp:hover:after {
+  width: 100%;
+}
+.btn.btn-whatsapp i {
+  margin-right: 0.7rem;
+  font-size: 2rem;
+  transform: translateY(2px);
+}
 
 a {
   transition: all 0.3s ease;
@@ -12491,10 +12508,10 @@ a:hover {
 .container {
   padding-left: 15px;
   padding-right: 15px;
-}
-.container .row > * {
-  padding-right: 1.5rem;
-  padding-left: 1.5rem;
+  /* .row > * {
+      padding-right: 1.5rem;
+      padding-left: 1.5rem;
+  } */
 }
 
 strong {
@@ -12891,10 +12908,13 @@ header .navbar-brand img {
   flex-direction: column;
   align-items: flex-start;
   height: 100%;
+  /* .loteo__barrio--masInfo {
+      margin-top: auto;
+  } */
 }
 @media (min-width: 992px) {
   .loteo .loteo__barrio {
-    padding-right: 2rem;
+    padding-right: 3rem;
   }
 }
 .loteo .loteo__barrio .loteo__barrio--titulo {
@@ -12971,19 +12991,31 @@ header .navbar-brand img {
   width: 100%;
   padding-bottom: 2rem;
 }
-.loteo .loteo__barrio .loteo__barrio--masInfo {
-  margin-top: auto;
-}
 .loteo .loteo__prices {
-  margin-top: 3rem;
+  margin-top: 4rem;
+  background-color: #ededed;
+}
+.loteo .loteo__prices--title {
+  background-color: #ccc;
+  padding: 1rem 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.loteo .loteo__prices--content {
   padding: 2rem;
-  background-color: #E6E6E6;
 }
-.loteo .loteo__prices div {
+.loteo .loteo__prices--content div {
   display: flex;
+  justify-content: space-between;
 }
-.loteo .loteo__prices div .lote {
+.loteo .loteo__prices--content div:not(:last-child) {
+  border-bottom: 1px dotted #bbb;
+  margin-bottom: 0.7rem;
+  padding-bottom: 0.7rem;
+}
+.loteo .loteo__prices--content div p {
   width: 50%;
+  margin: 0;
   /* @include media-breakpoint-up(sm) {
       width: 50%;  
 
@@ -12997,15 +13029,17 @@ header .navbar-brand img {
 
   } */
 }
-.loteo .loteo__prices div .lote i {
+.loteo .loteo__prices--content div p:last-child {
+  text-align: right;
+}
+.loteo .loteo__prices--content div p i {
   margin-right: 1rem;
 }
 .loteo .barrio__fotos {
   width: 100%;
-  height: 100%;
   border: 5px solid #20396f;
   overflow: hidden;
-  max-height: 500px;
+  height: 450px;
 }
 .loteo .barrio__fotos .gallery-container {
   width: 100%;
@@ -13015,6 +13049,7 @@ header .navbar-brand img {
   position: relative;
   cursor: pointer;
   display: block;
+  height: 100%;
 }
 .loteo .barrio__fotos .gallery-container .gallery-item img {
   transition: all 0.3s ease;
