@@ -105,6 +105,9 @@ section {
     padding: 3rem 0;
 }
 
+sup {
+    top: -0.3em;
+}
 
 
 h1,
@@ -138,7 +141,7 @@ h2 {
     width: 0;
     height: 4px;
     transition: width 0.5s linear;
-    z-index: 9999;
+    z-index: 1000;
     background-color: $color-blue-main;
     width: 100%;
     span {

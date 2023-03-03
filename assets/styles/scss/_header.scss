@@ -17,6 +17,16 @@ header {
     .navbar{
         background-color: $color-blue-main;
 
+        &-toggler {
+            border: 0;
+        }
+
+        &-nav {
+            @include media-breakpoint-down(lg) {
+                padding: 2rem 0;
+            }
+        }
+
         .navbar-collapse {
             flex-grow: inherit;
 
@@ -58,6 +68,9 @@ header {
                     border-radius: 2rem;
                     width: fit-content;
                     transition: all 0.3s ease;
+                    @include media-breakpoint-down(lg) {
+                        margin-top: 2rem;
+                    }
                     &:hover {
                         background-color: #009688;
                     }
@@ -68,7 +81,7 @@ header {
                         }
                     }
                     i {
-                        margin-right: 1rem;
+                        margin-right: .5rem;
                     }
                 }
             }
