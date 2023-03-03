@@ -12865,10 +12865,10 @@ header .navbar-brand img {
   min-width: 330px;
 }
 .swiper .swiper-slide.slide-01 {
-  background-image: url("../../images/slide_01_bg.JPG");
+  background-image: url("../../images/slide_01_bg.jpg");
 }
 .swiper .swiper-slide.slide-02 {
-  background-image: url("../../images/slide_02_bg.JPG");
+  background-image: url("../../images/slide_02_bg.jpg");
 }
 .swiper-button-prev, .swiper-button-next {
   color: #fff;
