@@ -12843,12 +12843,12 @@ header .navbar-brand img {
 .swiper .swiper-slide--content h2, .swiper .swiper-slide--content .h2 {
   color: #fff;
   font-size: 3.6rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
   text-align: center;
 }
 @media (min-width: 1200px) {
   .swiper .swiper-slide--content h2, .swiper .swiper-slide--content .h2 {
-    font-size: 5.4rem;
+    font-size: 5.2rem;
   }
 }
 .swiper .swiper-slide--content h3, .swiper .swiper-slide--content .h3 {
@@ -12858,7 +12858,7 @@ header .navbar-brand img {
 }
 @media (min-width: 1200px) {
   .swiper .swiper-slide--content h3, .swiper .swiper-slide--content .h3 {
-    font-size: 3.5rem;
+    font-size: 3.2rem;
   }
 }
 .swiper .swiper-slide--content .btn {
@@ -12982,7 +12982,7 @@ header .navbar-brand img {
   display: flex;
   align-items: center;
   line-height: 1.5;
-  margin-bottom: 1rem;
+  margin-bottom: 0.7rem;
 }
 .loteo .loteo__barrio .loteo__barrio--lotes ul li i {
   margin-right: 1rem;
@@ -13013,6 +13013,10 @@ header .navbar-brand img {
   width: 100%;
   padding-bottom: 2rem;
 }
+.loteo .loteo__barrio .loteo__barrio--financiacion ul {
+  margin-top: 1rem;
+  padding-left: 1.5rem;
+}
 .loteo .loteo__prices {
   margin-top: 4rem;
   background-color: #ededed;
@@ -13038,6 +13042,7 @@ header .navbar-brand img {
 .loteo .loteo__prices--content div p {
   width: 70%;
   margin: 0;
+  font-size: 1.5rem;
   /* @include media-breakpoint-up(sm) {
       width: 50%;  
 
@@ -13067,7 +13072,7 @@ header .navbar-brand img {
 }
 @media (min-width: 992px) {
   .loteo .barrio__fotos {
-    height: 450px;
+    height: 400px;
     margin-top: 0;
   }
 }
