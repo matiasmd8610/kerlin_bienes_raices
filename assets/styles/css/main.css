@@ -12832,17 +12832,12 @@ header .navbar-brand img {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  max-width: 70%;
+  max-width: 80%;
   transform: translateY(-2rem);
-}
-@media (min-width: 992px) {
-  .swiper .swiper-slide--content {
-    max-width: 80%;
-  }
 }
 .swiper .swiper-slide--content h2, .swiper .swiper-slide--content .h2 {
   color: #fff;
-  font-size: 3.6rem;
+  font-size: 3.2rem;
   margin-bottom: 1rem;
   text-align: center;
 }
@@ -12925,6 +12920,9 @@ header .navbar-brand img {
   flex-direction: column;
   align-items: flex-start;
   height: 100%;
+  /* &--zone {
+      margin-top: 2rem;
+  } */
   /* .loteo__barrio--masInfo {
       margin-top: auto;
   } */
@@ -12934,16 +12932,18 @@ header .navbar-brand img {
     padding-right: 3rem;
   }
 }
-.loteo .loteo__barrio .modalMaps .modal-dialog {
-  max-width: 80%;
+@media (min-width: 1200px) {
+  .loteo .loteo__barrio .modalMaps .modal-dialog {
+    max-width: 80%;
+  }
 }
-.loteo .loteo__barrio .loteo__barrio--titulo {
+.loteo .loteo__barrio--titulo {
   padding-bottom: 2rem;
 }
-.loteo .loteo__barrio .loteo__barrio--titulo h2, .loteo .loteo__barrio .loteo__barrio--titulo .h2 {
+.loteo .loteo__barrio--titulo h2, .loteo .loteo__barrio--titulo .h2 {
   padding-bottom: 0.5rem;
 }
-.loteo .loteo__barrio .loteo__barrio--titulo h2:after, .loteo .loteo__barrio .loteo__barrio--titulo .h2:after {
+.loteo .loteo__barrio--titulo h2:after, .loteo .loteo__barrio--titulo .h2:after {
   content: "";
   display: block;
   background-color: #20396f;
@@ -12952,39 +12952,54 @@ header .navbar-brand img {
   transform: translateY(10px);
   margin-bottom: 25px;
 }
-.loteo .loteo__barrio .loteo__barrio--titulo h3, .loteo .loteo__barrio .loteo__barrio--titulo .h3 {
-  font-size: 2.1rem;
+.loteo .loteo__barrio--titulo h3, .loteo .loteo__barrio--titulo .h3 {
+  font-size: 1.8rem;
   margin: 0;
+  position: relative;
+  padding-left: 2.2rem;
 }
-.loteo .loteo__barrio .loteo__barrio--titulo h3 i, .loteo .loteo__barrio .loteo__barrio--titulo .h3 i {
-  margin-right: 1.2rem;
+@media (min-width: 992px) {
+  .loteo .loteo__barrio--titulo h3, .loteo .loteo__barrio--titulo .h3 {
+    font-size: 2.1rem;
+  }
 }
-.loteo .loteo__barrio .loteo__barrio--titulo a {
-  margin-left: 27px;
+.loteo .loteo__barrio--titulo h3 i, .loteo .loteo__barrio--titulo .h3 i {
+  font-size: 1.8rem;
+  position: absolute;
+  left: 0;
+  top: 4px;
+}
+.loteo .loteo__barrio--titulo h3 .separator, .loteo .loteo__barrio--titulo .h3 .separator {
+  display: inline-block;
+  margin: 0 0.3rem;
+  color: #4764a3;
+}
+.loteo .loteo__barrio--titulo a {
+  margin-left: 22px;
   font-weight: 600;
   font-size: 1.5rem;
 }
-.loteo .loteo__barrio .loteo__barrio--lotes {
+.loteo .loteo__barrio--lotes {
   width: 100%;
   border-top: solid 1px rgba(32, 57, 111, 0.3);
   border-bottom: solid 1px rgba(32, 57, 111, 0.3);
   padding: 20px 0px 1rem;
 }
-.loteo .loteo__barrio .loteo__barrio--lotes p {
+.loteo .loteo__barrio--lotes p {
   text-align: justify;
 }
-.loteo .loteo__barrio .loteo__barrio--lotes ul {
+.loteo .loteo__barrio--lotes ul {
   list-style: none;
   padding: 0;
   margin-top: 2rem;
 }
-.loteo .loteo__barrio .loteo__barrio--lotes ul li {
+.loteo .loteo__barrio--lotes ul li {
   display: flex;
   align-items: center;
   line-height: 1.5;
   margin-bottom: 0.7rem;
 }
-.loteo .loteo__barrio .loteo__barrio--lotes ul li i {
+.loteo .loteo__barrio--lotes ul li i {
   margin-right: 1rem;
 }
 .loteo .loteo__barrio .loteo__barrio--estado {
@@ -13040,9 +13055,9 @@ header .navbar-brand img {
   padding-bottom: 0.7rem;
 }
 .loteo .loteo__prices--content div p {
-  width: 70%;
+  width: 65%;
   margin: 0;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   /* @include media-breakpoint-up(sm) {
       width: 50%;  
 
@@ -13056,9 +13071,14 @@ header .navbar-brand img {
 
   } */
 }
+@media (min-width: 992px) {
+  .loteo .loteo__prices--content div p {
+    font-size: 1.6rem;
+  }
+}
 .loteo .loteo__prices--content div p:last-child {
   text-align: right;
-  width: 30%;
+  width: 35%;
 }
 .loteo .loteo__prices--content div p i {
   margin-right: 1rem;

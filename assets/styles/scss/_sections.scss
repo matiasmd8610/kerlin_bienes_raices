@@ -34,15 +34,12 @@
             align-items: center;
             justify-content: center;
             flex-direction: column;
-            max-width: 70%;
+            max-width: 80%;
             transform: translateY(-2rem);
-            @include media-breakpoint-up(lg) {
-                max-width: 80%;
-            }
 
             h2 {
                 color: #fff;
-                font-size: 3.6rem;
+                font-size: 3.2rem;
                 margin-bottom: 1rem;
                 text-align: center;
                 @include media-breakpoint-up(xl) {
@@ -149,11 +146,13 @@
 
         .modalMaps {
             .modal-dialog {
-                max-width: 80%;
+                @include media-breakpoint-up(xl) {
+                    max-width: 80%;
+                }
             }
         }
 
-        .loteo__barrio--titulo {
+        &--titulo {
             padding-bottom: 2rem;
 
             h2 {
@@ -171,22 +170,41 @@
             }
 
             h3 {
-                font-size: 2.1rem;
+                font-size: 1.8rem;
                 margin: 0;
+                position: relative;
+                padding-left: 2.2rem;
+                @include media-breakpoint-up(lg) {
+                    font-size: 2.1rem;
+                }
+
                 i {
-                    margin-right: 1.2rem;
+                    font-size: 1.8rem;
+                    position: absolute;
+                    left: 0;
+                    top: 4px;
+                }
+
+                .separator {
+                    display: inline-block;
+                    margin: 0 .3rem;
+                    color: $color-blue-light;
                 }
             }
 
             a {
-                margin-left: 27px;
+                margin-left: 22px;
                 font-weight: 600;
                 font-size: 1.5rem;
             }
             
         }
 
-        .loteo__barrio--lotes {
+        /* &--zone {
+            margin-top: 2rem;
+        } */
+
+        &--lotes {
             width: 100%;
             border-top: solid 1px rgba(32, 57, 111, 0.3);
             border-bottom: solid 1px rgba(32, 57, 111, 0.3);
@@ -279,13 +297,16 @@
                 }
     
                 p {
-                    width: 70%;
+                    width: 65%;
                     margin: 0;
-                    font-size: 1.5rem;
+                    font-size: 1.4rem;
+                    @include media-breakpoint-up(lg) {
+                        font-size: 1.6rem;
+                    }
 
                     &:last-child {
                         text-align: right;
-                        width: 30%;
+                        width: 35%;
                     }
 
                     i {
