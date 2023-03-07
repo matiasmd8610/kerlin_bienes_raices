@@ -54,7 +54,7 @@ document.querySelectorAll('.gallery-container').forEach((element, index) => {
 /*Header anchor links
 *********************************************/
 $(document).ready(function(){
-  $('header li a[href^="#"]').on('click',function (e) {
+  $('header li a[href^="#"], .swiper-slide .btn').on('click',function (e) {
       e.preventDefault();
       var target = this.hash,
       $target = $(target);
