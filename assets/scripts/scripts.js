@@ -74,3 +74,12 @@ window.addEventListener("scroll", function() {
   var progress = currentHeight / totalHeight * 100;
   progressBar.style.width = progress + "%";
 });
+
+let iconoHambur = document.querySelector(".navbar-toggler-icon");
+  addEventListener("click", function(){
+    let S1 = document.querySelector("#S1");
+    let S2 = document.querySelector("#S2");
+    S1.classList.toggle("rotate1");
+    S2.classList.toggle("rotate2");
+    
+  });

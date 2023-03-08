@@ -12729,6 +12729,27 @@ header .navbar {
 header .navbar-toggler {
   border: 0;
 }
+header .navbar-toggler-icon {
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  background-image: none;
+  transition: all 0.25s ease-in-out;
+}
+header .navbar-toggler-icon span {
+  display: block;
+  width: 32px;
+  height: 3px;
+  background-color: #fff;
+  margin-bottom: 8px;
+  transition: all 0.25s ease-in-out;
+}
+header .navbar-toggler:focus {
+  text-decoration: none;
+  outline: 0;
+  box-shadow: 0 0 0 0;
+}
 @media (max-width: 991.98px) {
   header .navbar-nav {
     padding: 2rem 0;
@@ -12793,6 +12814,14 @@ header .navbar-brand img {
   width: 126px;
   height: auto;
   transition: all 0.3s ease;
+}
+
+.rotate1 {
+  transform: rotate(45deg) translateY(7px);
+}
+
+.rotate2 {
+  transform: rotate(-45deg) translateY(-7px);
 }
 
 /*MAIN SLIDER
