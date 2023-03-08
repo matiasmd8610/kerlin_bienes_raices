@@ -12573,6 +12573,10 @@ h2, .h2 {
   height: 100%;
 }
 
+.lg-sub-html p {
+  font-size: 1.5rem;
+}
+
 footer .masInfo {
   display: flex;
   flex-direction: column;
