@@ -34,8 +34,11 @@
             align-items: center;
             justify-content: center;
             flex-direction: column;
-            max-width: 80%;
+            max-width: 90%;
             transform: translateY(-2rem);
+            @include media-breakpoint-up(lg) {
+                max-width: 80%;
+            }
 
             h2 {
                 color: #fff;
@@ -90,6 +93,10 @@
         &:after {
             transition: all 0.3s ease;
             font-size: 2.6rem;
+        }
+
+        @include media-breakpoint-down(lg) {
+            display: none;
         }
     }
 
@@ -220,7 +227,7 @@
                 margin-top: 2rem;
                 li {
                     display: flex;
-                    align-items: center;
+                    align-items: baseline;
                     line-height: 1.5;
                     margin-bottom: .7rem;
                     i {
@@ -277,10 +284,11 @@
         background-color: #ededed;
         
         &--title {
-            background-color: #ccc;
+            background-color: $color-blue-main;
             padding: 1rem 2rem;
             font-weight: 700;
-            text-transform: uppercase
+            text-transform: uppercase;
+            color: #fff;
         }
 
         &--content {
@@ -299,9 +307,14 @@
                 p {
                     width: 65%;
                     margin: 0;
-                    font-size: 1.4rem;
-                    @include media-breakpoint-up(lg) {
+                    font-size: 1.5rem;
+/*                     @include media-breakpoint-up(lg) {
                         font-size: 1.6rem;
+                    } */
+
+                    &.lote {
+                        display: flex;
+                        align-items: baseline;
                     }
 
                     &:last-child {

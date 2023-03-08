@@ -12832,8 +12832,13 @@ header .navbar-brand img {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  max-width: 80%;
+  max-width: 90%;
   transform: translateY(-2rem);
+}
+@media (min-width: 992px) {
+  .swiper .swiper-slide--content {
+    max-width: 80%;
+  }
 }
 .swiper .swiper-slide--content h2, .swiper .swiper-slide--content .h2 {
   color: #fff;
@@ -12879,6 +12884,11 @@ header .navbar-brand img {
 .swiper-button-prev:after, .swiper-button-next:after {
   transition: all 0.3s ease;
   font-size: 2.6rem;
+}
+@media (max-width: 991.98px) {
+  .swiper-button-prev, .swiper-button-next {
+    display: none;
+  }
 }
 .swiper-button-prev {
   left: -4rem;
@@ -12995,7 +13005,7 @@ header .navbar-brand img {
 }
 .loteo .loteo__barrio--lotes ul li {
   display: flex;
-  align-items: center;
+  align-items: baseline;
   line-height: 1.5;
   margin-bottom: 0.7rem;
 }
@@ -13037,10 +13047,11 @@ header .navbar-brand img {
   background-color: #ededed;
 }
 .loteo .loteo__prices--title {
-  background-color: #ccc;
+  background-color: #20396f;
   padding: 1rem 2rem;
   font-weight: 700;
   text-transform: uppercase;
+  color: #fff;
 }
 .loteo .loteo__prices--content {
   padding: 2rem;
@@ -13057,7 +13068,10 @@ header .navbar-brand img {
 .loteo .loteo__prices--content div p {
   width: 65%;
   margin: 0;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
+  /*                     @include media-breakpoint-up(lg) {
+                          font-size: 1.6rem;
+                      } */
   /* @include media-breakpoint-up(sm) {
       width: 50%;  
 
@@ -13071,10 +13085,9 @@ header .navbar-brand img {
 
   } */
 }
-@media (min-width: 992px) {
-  .loteo .loteo__prices--content div p {
-    font-size: 1.6rem;
-  }
+.loteo .loteo__prices--content div p.lote {
+  display: flex;
+  align-items: baseline;
 }
 .loteo .loteo__prices--content div p:last-child {
   text-align: right;
