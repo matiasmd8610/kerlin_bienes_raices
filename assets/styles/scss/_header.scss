@@ -1,4 +1,12 @@
 header {
+    
+    @include media-breakpoint-down(sm) {
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    }
+    
+    
     &.sticky {
         box-shadow: 0px 0px 6px #333;
         background: rgb(0, 0, 0, 92%);
@@ -127,6 +135,7 @@ header {
 
 }
 
+// Clase del efecto para el Menu Hamburguesa //
 .rotate1{
     transform: rotate(45deg) translateY(7px);
     
