@@ -51,7 +51,7 @@
                 margin-bottom: 1rem;
                 text-align: center;
                 @include media-breakpoint-up(xl) {
-                    font-size: 5.2rem;
+                    font-size: 5rem;
                 }
                             
             }
@@ -67,6 +67,7 @@
 
             .btn {
                 min-width: 330px;
+                margin-top: 2rem;
             }
         }
 
@@ -278,9 +279,12 @@
             }
         }
 
-        /* .loteo__barrio--masInfo {
-            margin-top: auto;
-        } */
+        .loteo__barrio--masInfo {
+            //margin-top: auto;
+            @include media-breakpoint-down(md) {
+                width: 100%;
+            }
+        }
 
     }
 

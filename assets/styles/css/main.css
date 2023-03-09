@@ -12612,7 +12612,6 @@ footer .masInfo .masInfo__datos .masInfo__datos--titulo {
   }
 }
 footer .masInfo .masInfo__datos .masInfo__datos--text {
-  font-size: 1.3rem;
   margin-bottom: 2rem;
   margin-right: 0.3rem;
   margin-left: 0.3rem;
@@ -12635,6 +12634,10 @@ footer .masInfo .masInfo__datos .masInfo__datos--Whatsapp {
   color: white;
   padding: 0.6rem 2rem;
   margin: 0rem 0.3rem;
+  transition: all 0.3s ease;
+}
+footer .masInfo .masInfo__datos .masInfo__datos--Whatsapp:hover {
+  background-color: #009688;
 }
 @media (min-width: 768px) {
   footer .masInfo .masInfo__datos .masInfo__datos--Whatsapp {
@@ -12739,12 +12742,14 @@ footer .back-to-top {
   text-decoration: none;
   z-index: 5;
 }
-footer .back-to-top:hover {
-  background-color: #4764a3;
-  border-color: #4764a3;
-}
-footer .back-to-top:hover i {
-  color: #fff;
+@media (min-width: 992px) {
+  footer .back-to-top:hover {
+    background-color: #4764a3;
+    border-color: #4764a3;
+  }
+  footer .back-to-top:hover i {
+    color: #fff;
+  }
 }
 footer .back-to-top i {
   font-size: 2.2rem;
@@ -12832,7 +12837,7 @@ header .navbar .navbar-collapse .nav-item .nav-link:hover:after {
     transition: all 0.3s ease;
     background-color: #fff;
     height: 1px;
-    bottom: 1px;
+    bottom: 4px;
   }
 }
 header .navbar .navbar-collapse .nav-item.contact-us {
@@ -12934,7 +12939,7 @@ header .navbar-brand img {
 }
 @media (min-width: 1200px) {
   .swiper .swiper-slide--content h2, .swiper .swiper-slide--content .h2 {
-    font-size: 5.2rem;
+    font-size: 5rem;
   }
 }
 .swiper .swiper-slide--content h3, .swiper .swiper-slide--content .h3 {
@@ -12949,6 +12954,7 @@ header .navbar-brand img {
 }
 .swiper .swiper-slide--content .btn {
   min-width: 330px;
+  margin-top: 2rem;
 }
 .swiper .swiper-slide.slide-01 {
   background-image: url("../../images/slide_01.jpg");
@@ -13018,9 +13024,6 @@ header .navbar-brand img {
   height: 100%;
   /* &--zone {
       margin-top: 2rem;
-  } */
-  /* .loteo__barrio--masInfo {
-      margin-top: auto;
   } */
 }
 @media (min-width: 992px) {
@@ -13127,6 +13130,11 @@ header .navbar-brand img {
 .loteo .loteo__barrio .loteo__barrio--financiacion ul {
   margin-top: 1rem;
   padding-left: 1.5rem;
+}
+@media (max-width: 767.98px) {
+  .loteo .loteo__barrio .loteo__barrio--masInfo {
+    width: 100%;
+  }
 }
 .loteo .loteo__prices {
   margin-top: 4rem;

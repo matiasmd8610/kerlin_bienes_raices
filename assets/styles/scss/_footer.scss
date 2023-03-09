@@ -31,7 +31,6 @@ footer {
             }
 
             .masInfo__datos--text {
-                font-size: 1.3rem;
                 margin-bottom: 2rem;
                 margin-right: 0.3rem;
                 margin-left: 0.3rem;
@@ -56,6 +55,10 @@ footer {
                 color: white;
                 padding: 0.6rem 2rem;
                 margin: 0rem 0.3rem;
+                transition: all 0.3s ease;
+                &:hover {
+                    background-color: #009688;
+                }
 
                 @include media-breakpoint-up(md) {
                     font-size: 1.9rem;
@@ -176,13 +179,16 @@ footer {
         border-radius: 50%;
         text-decoration: none;
         z-index: 5;
-        &:hover {
-            background-color: $color-blue-light;
-            border-color: $color-blue-light;
-            i {
-                color: #fff;
+        @include media-breakpoint-up(lg) {
+            &:hover {
+                background-color: $color-blue-light;
+                border-color: $color-blue-light;
+                i {
+                    color: #fff;
+                }
             }
         }
+        
         i {
             font-size: 2.2rem;
             color: $color-blue-main;
