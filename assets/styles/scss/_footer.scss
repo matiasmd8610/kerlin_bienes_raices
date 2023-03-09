@@ -1,4 +1,6 @@
 footer {
+    position: relative;
+
     .masInfo {
         display: flex;
         flex-direction: column;
@@ -48,7 +50,7 @@ footer {
 
             .masInfo__datos--Whatsapp {
                 font-size: 1.6rem;
-                background-color: rgb(31, 202, 31);
+                background-color: $color-whatsapp;
                 border-radius: 22px;
                 border-style: none;
                 color: white;
@@ -103,6 +105,10 @@ footer {
                 color: #fff;
                 border-radius: 50%;
                 text-decoration: none;
+                &:hover {
+                    background-color: $color-blue-light;
+                    transform: translateY(-0.5rem);
+                }
 
                 i {
                     font-size: 2.4rem;
@@ -124,7 +130,7 @@ footer {
 
     .footer-widget {
         position: fixed;
-        right: 2rem;
+        left: 2rem;
         bottom: 2rem;
         z-index: 100;
         width: 6rem;
@@ -152,6 +158,35 @@ footer {
                 padding: 0;
                 width: 40px;
             }
+        }
+    }
+
+    .back-to-top {
+        color: #fff;
+        position: fixed;
+        right: 1.5rem;
+        bottom: 1.5rem;
+        transition: all .3s ease-in-out;
+        background-color: #fff;
+        border: 2px solid $color-blue-main;
+        width: 4rem;
+        height: 4rem;
+        display: grid;
+        place-items: center;
+        border-radius: 50%;
+        text-decoration: none;
+        z-index: 5;
+        &:hover {
+            background-color: $color-blue-light;
+            border-color: $color-blue-light;
+            i {
+                color: #fff;
+            }
+        }
+        i {
+            font-size: 2.2rem;
+            color: $color-blue-main;
+            transition: all 0.3s ease;
         }
     }
 }

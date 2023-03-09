@@ -27,6 +27,7 @@ header {
 
         &-toggler {
             border: 0;
+            padding: 0;
 
             &-icon {
                 width: auto;
@@ -38,12 +39,14 @@ header {
                 
                 
                     span{
-                    display: block;
-                    width: 32px;
-                    height: 3px;
-                    background-color: #fff;
-                    margin-bottom: 8px;
-                    transition: all .25s ease-in-out;
+                        display: block;
+                        width: 30px;
+                        height: 3px;
+                        background-color: #fff;
+                        transition: all .25s ease-in-out;
+                        &:not(:last-child) {
+                            margin-bottom: 7px;
+                        }
                     }
             }
 
@@ -82,16 +85,18 @@ header {
                         }
                     }
                     &:after {
-                        content: '';
-                        display: block;
-                        left: 50%;
-                        transform: translateX(-50%);
-                        width: 0;
-                        position: absolute;
-                        transition: all 0.3s ease;
-                        background-color: #fff;
-                        height: 1px;
-                        bottom: 1px;
+                        @include media-breakpoint-up(lg) {
+                            content: '';
+                            display: block;
+                            left: 50%;
+                            transform: translateX(-50%);
+                            width: 0;
+                            position: absolute;
+                            transition: all 0.3s ease;
+                            background-color: #fff;
+                            height: 1px;
+                            bottom: 1px;
+                        }
                     }
                 }
 

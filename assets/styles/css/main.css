@@ -12425,6 +12425,7 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
 /*COLORS
 *******************************/
 html {
+  scroll-behavior: smooth;
   font-size: 10px;
 }
 
@@ -12480,7 +12481,7 @@ body {
   width: 100%;
 }
 .btn.btn-whatsapp {
-  background-color: #25D366;
+  background-color: #1fca1f;
   border-radius: 2.5rem;
   overflow: hidden;
   color: #fff !important;
@@ -12577,6 +12578,9 @@ h2, .h2 {
   font-size: 1.5rem;
 }
 
+footer {
+  position: relative;
+}
 footer .masInfo {
   display: flex;
   flex-direction: column;
@@ -12625,7 +12629,7 @@ footer .masInfo .masInfo__datos .masInfo__datos--text {
 }
 footer .masInfo .masInfo__datos .masInfo__datos--Whatsapp {
   font-size: 1.6rem;
-  background-color: rgb(31, 202, 31);
+  background-color: #1fca1f;
   border-radius: 22px;
   border-style: none;
   color: white;
@@ -12672,6 +12676,10 @@ footer .social-links li a {
   border-radius: 50%;
   text-decoration: none;
 }
+footer .social-links li a:hover {
+  background-color: #4764a3;
+  transform: translateY(-0.5rem);
+}
 footer .social-links li a i {
   font-size: 2.4rem;
 }
@@ -12685,7 +12693,7 @@ footer .copyright {
 }
 footer .footer-widget {
   position: fixed;
-  right: 2rem;
+  left: 2rem;
   bottom: 2rem;
   z-index: 100;
   width: 6rem;
@@ -12704,7 +12712,7 @@ footer .footer-widget a {
   padding: 10px;
 }
 footer .footer-widget a:hover {
-  background-color: #25D366;
+  background-color: #1fca1f;
   color: #fff;
 }
 footer .footer-widget a img {
@@ -12714,6 +12722,34 @@ footer .footer-widget a img {
   position: relative;
   padding: 0;
   width: 40px;
+}
+footer .back-to-top {
+  color: #fff;
+  position: fixed;
+  right: 1.5rem;
+  bottom: 1.5rem;
+  transition: all 0.3s ease-in-out;
+  background-color: #fff;
+  border: 2px solid #20396f;
+  width: 4rem;
+  height: 4rem;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  text-decoration: none;
+  z-index: 5;
+}
+footer .back-to-top:hover {
+  background-color: #4764a3;
+  border-color: #4764a3;
+}
+footer .back-to-top:hover i {
+  color: #fff;
+}
+footer .back-to-top i {
+  font-size: 2.2rem;
+  color: #20396f;
+  transition: all 0.3s ease;
 }
 
 @media (max-width: 575.98px) {
@@ -12739,6 +12775,7 @@ header .navbar {
 }
 header .navbar-toggler {
   border: 0;
+  padding: 0;
 }
 header .navbar-toggler-icon {
   width: auto;
@@ -12750,11 +12787,13 @@ header .navbar-toggler-icon {
 }
 header .navbar-toggler-icon span {
   display: block;
-  width: 32px;
+  width: 30px;
   height: 3px;
   background-color: #fff;
-  margin-bottom: 8px;
   transition: all 0.25s ease-in-out;
+}
+header .navbar-toggler-icon span:not(:last-child) {
+  margin-bottom: 7px;
 }
 header .navbar-toggler:focus {
   text-decoration: none;
@@ -12782,20 +12821,22 @@ header .navbar .navbar-collapse .nav-item .nav-link {
 header .navbar .navbar-collapse .nav-item .nav-link:hover:after {
   width: 85%;
 }
-header .navbar .navbar-collapse .nav-item .nav-link:after {
-  content: "";
-  display: block;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 0;
-  position: absolute;
-  transition: all 0.3s ease;
-  background-color: #fff;
-  height: 1px;
-  bottom: 1px;
+@media (min-width: 992px) {
+  header .navbar .navbar-collapse .nav-item .nav-link:after {
+    content: "";
+    display: block;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    position: absolute;
+    transition: all 0.3s ease;
+    background-color: #fff;
+    height: 1px;
+    bottom: 1px;
+  }
 }
 header .navbar .navbar-collapse .nav-item.contact-us {
-  background-color: #25D366;
+  background-color: #1fca1f;
   padding: 0.2rem 1.4rem;
   display: flex;
   flex-wrap: nowrap;
@@ -13237,6 +13278,11 @@ header .navbar-brand img {
 }
 .formulario .form-group textarea {
   height: 178px;
+}
+@media (min-width: 992px) {
+  .formulario .form-group textarea {
+    margin-left: 1rem;
+  }
 }
 
 /*THANK YOU
