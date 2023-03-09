@@ -140,12 +140,9 @@ header {
 
 }
 
-// Clase del efecto para el Menu Hamburguesa //
-.rotate1{
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon #S1{
     transform: rotate(45deg) translateY(7px);
-    
-
 }
-.rotate2{
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon #S2{
     transform: rotate(-45deg) translateY(-7px);
 }

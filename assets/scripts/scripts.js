@@ -75,17 +75,6 @@ window.addEventListener("scroll", function() {
   progressBar.style.width = progress + "%";
 });
 
-/*Hamburguer efect
-****************************************************************/
-let iconoHambur = document.querySelector(".navbar-toggler-icon");
-  iconoHambur.addEventListener("click", function(){
-    let S1 = document.querySelector("#S1");
-    let S2 = document.querySelector("#S2");
-    S1.classList.toggle("rotate1");
-    S2.classList.toggle("rotate2");
-});
-
-
 /*AOS Init
 *******************************************************/
 AOS.init();
