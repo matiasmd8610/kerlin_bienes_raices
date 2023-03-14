@@ -12911,7 +12911,7 @@ header .navbar-brand img {
 }
 @media (max-width: 575.98px) {
   .swiper {
-    padding-top: 69px;
+    padding-top: 82px;
   }
 }
 .swiper .swiper-slide {
@@ -13033,10 +13033,15 @@ header .navbar-brand img {
 /*SECTION LOTEOS
 *******************************************/
 .loteo {
-  padding: 5rem 0;
+  padding: 4rem 0;
 }
 .loteo:nth-child(2n+1) {
   background-color: #f5f5f5;
+}
+@media (min-width: 992px) {
+  .loteo {
+    padding: 5rem 0;
+  }
 }
 .loteo .loteo__barrio {
   width: 100%;
@@ -13049,6 +13054,14 @@ header .navbar-brand img {
   .loteo .loteo__barrio {
     padding-right: 3rem;
   }
+}
+.loteo .loteo__barrio .modalMaps .modal-dialog .modal-header h2, .loteo .loteo__barrio .modalMaps .modal-dialog .modal-header .h2 {
+  color: #333;
+  font-size: 1.6rem;
+  padding: 0;
+}
+.loteo .loteo__barrio .modalMaps .modal-dialog .modal-header h2:after, .loteo .loteo__barrio .modalMaps .modal-dialog .modal-header .h2:after {
+  display: none;
 }
 @media (min-width: 1200px) {
   .loteo .loteo__barrio .modalMaps .modal-dialog {
