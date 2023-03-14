@@ -12561,6 +12561,44 @@ h2, .h2 {
   font-size: 1.5rem;
 }
 
+/*ANIMATIONS
+********************************************/
+@keyframes bounce-in-top {
+  0% {
+    transform: translateY(-500px);
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+  38% {
+    transform: translateY(0);
+    animation-timing-function: ease-out;
+    opacity: 1;
+  }
+  55% {
+    transform: translateY(-65px);
+    animation-timing-function: ease-in;
+  }
+  72% {
+    transform: translateY(0);
+    animation-timing-function: ease-out;
+  }
+  81% {
+    transform: translateY(-28px);
+    animation-timing-function: ease-in;
+  }
+  90% {
+    transform: translateY(0);
+    animation-timing-function: ease-out;
+  }
+  95% {
+    transform: translateY(-8px);
+    animation-timing-function: ease-in;
+  }
+  100% {
+    transform: translateY(0);
+    animation-timing-function: ease-out;
+  }
+}
 footer {
   position: relative;
 }
@@ -12615,8 +12653,7 @@ footer .masInfo .masInfo__datos .masInfo__datos--Whatsapp {
   border-radius: 22px;
   border-style: none;
   color: white;
-  padding: 0.6rem 2rem;
-  margin: 0rem 0.3rem;
+  padding: 0.7rem 2.5rem;
   transition: all 0.3s ease;
 }
 footer .masInfo .masInfo__datos .masInfo__datos--Whatsapp:hover {
@@ -12684,6 +12721,8 @@ footer .footer-widget {
   z-index: 100;
   width: 6rem;
   height: 6rem;
+  animation: bounce-in-top 1.1s both;
+  animation-delay: 1s;
 }
 footer .footer-widget a {
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
@@ -13005,9 +13044,6 @@ header .navbar-brand img {
   flex-direction: column;
   align-items: flex-start;
   height: 100%;
-  /* &--zone {
-      margin-top: 2rem;
-  } */
 }
 @media (min-width: 992px) {
   .loteo .loteo__barrio {

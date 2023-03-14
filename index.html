@@ -19,6 +19,31 @@
   <link rel="stylesheet" href="assets/styles/css/main.css">
   <title>Kerlin Bienes Raíces - Loteos</title>
   <!-- <script src="https://www.google.com/recaptcha/api.js" async defer></script> -->
+  <script type='application/ld+json'>
+    {
+      "@context": "http://www.schema.org",
+      "@type": "HomeAndConstructionBusiness",
+      "name": "Kerlin Bienes Raíces",
+      "sameAs": [
+         "https://www.facebook.com/kerlinbienesraices/",
+         "https://www.linkedin.com/in/beatriz-kerlin",
+         "https://www.instagram.com/kerlinbienesraices/"
+      ],
+      "logo": "https://www.loteoskerlin.com.ar/assets/images/logo_kerlin.png",
+      "description": "Inmobiliaria en San Nicolás de Los Arroyos. Asesoramiento para la compra y alquiler de tu propiedad. Venta y alquiler de casas, departamentos, locales, cocheras.",
+      "address": {
+         "@type": "PostalAddress",
+         "streetAddress": "Francia 254",
+         "addressLocality": "San Nicolás de los arroyos",
+         "addressRegion": "Buenos Aires",
+         "postalCode": "B2900",
+         "addressCountry": "Argentina"
+      },
+      "hasMap": "https://goo.gl/maps/vGGBVnVRejsy8VHb6",
+       "openingHours": "Mo 09:00-16:00 Tu 09:00-16:00 We 09:00-16:00 Th 09:00-16:00 Fr 09:00-16:00",
+      "telephone": "+5493364379531"
+    }
+  </script>
 </head>
 
 <body>
@@ -35,7 +60,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark">
       <div class="container">
         <a class="navbar-brand" href="index.html">
-          <img src="assets/images/logo_kerlin.png" alt="logo Kerlin Bienes Raices" width="126" data-aos="fade-right" data-aos-duration="1700">
+          <img src="assets/images/logo_kerlin.png" alt="logo Kerlin Bienes Raices" width="126">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -45,20 +70,12 @@
           </div>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <!-- <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
-            <li class="nav-item"><a class="nav-link " href="https://kerlin.com.ar/#propiedades">Propieades</a></li>
-            <li class="nav-item"><a class="nav-link " href="https://kerlin.com.ar/#servicios">Servicios</a></li>
-            <li class="nav-item"><a class="nav-link " href="https://kerlin.com.ar/tasaciones">Tasaciones</a></li>
-            <li class="nav-item"><a class="nav-link " href="https://kerlin.com.ar/nosotros">Nosotros</a></li>
-            <li class="nav-item"><a class="nav-link " href="https://kerlin.com.ar/sumate">Sumate</a></li>
-            <li class="nav-item"><a class="nav-link " href="https://kerlin.com.ar/blog">Blog</a></li>
-            <li class="nav-item"><a class="nav-link " href="https://kerlin.com.ar/newsletter-form">Newsletter</a></li> -->
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0" data-aos="fade-left" data-aos-duration="1000">
             <li class="nav-item"><a class="nav-link " href="#loteos">Loteos</a></li>
             <li class="nav-item"><a class="nav-link " href="#comunicateConAsesor">Contacto</a></li>
             <li class="nav-item contact-us">
               <a class="nav-link"
-                href="https://wa.me/+5493364191219?text=¡Hola!%20Quisiera%20recibir%20más%20información%20sobre%20los%20loteos%20en%20San%20Nicolas%20de%20los%20arroyos"
+                href="https://wa.me/+5493364379531?text=¡Hola!%20Quisiera%20recibir%20más%20información%20sobre%20los%20loteos%20en%20San%20Nicolas%20de%20los%20arroyos"
                 target="_blank"><i class="fab fa-whatsapp"></i> Contactanos</a>
             </li>
           </ul>
@@ -98,7 +115,7 @@
 
     <!-- SECTION LOTEOS: Begin  -->
     <section id="loteos" class="p-0">
-      <div class="loteo"  data-aos="fade-up" data-aos-duration="500">
+      <div class="loteo"  data-aos="fade-up" data-aos-duration="1000">
         <div class="container">
           <div class="row">
             <div class="col-lg-6">
@@ -107,9 +124,6 @@
                   <h2>El Portal 2</h2>
                   <h3><i class="fa fa-location-dot"></i>Av. Ponce de Leon 600 <span class="separator">-</span> Zona Sur</h3>
                   <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal">Ver en Google Maps</a>
-                  <!-- <div class="loteo__barrio--zone">
-                    <strong>ZONA:</strong> Sur
-                  </div> --> 
                   <!-- Modal map: Begin -->
                   <div class="modal fade modalMaps" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered">
@@ -119,7 +133,7 @@
                           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
-                          <iframe src="https://www.google.com/maps/d/embed?mid=1NCmwOtODLGtmmdqU4GNBdEwYEbbm28s&ehbc=2E312F" width="100%" height="580"></iframe>
+                          <iframe src="https://www.google.com/maps/d/edit?mid=1y4mOpM6W3Peqj-kzz4VaYffGJnQ1YcY&usp=sharing" width="100%" height="580"></iframe>
                         </div>
                       </div>
                     </div>
@@ -140,7 +154,7 @@
                   <strong>ESTADO:</strong><span class="state available"><i class="fa-regular fa-circle-check"></i>Disponible para entregar</span>
                 </div>
                 <div class="loteo__barrio--financiacion">
-                  <strong>FINANCIACIÓN:</strong>
+                  <strong>FINANCIACIÓN:</strong> Todos entrega 50% y hasta 84 cuotas en pesos ajustables por salario, o fija dólares.
                 </div>
                 <div class="loteo__barrio--masInfo">
                   <a href="https://wa.me/5493364379531?text=Hola!%20Quisiera%20recibir%20información%20sobre%20El%20Portal%202" target="_blank" class="btn btn-whatsapp mt-2">
@@ -156,34 +170,15 @@
                     <img alt="" class="img-responsive" src="assets/images/gallery/el_portal_2/01.jpg">
                     <span class="gallery-item-zoom"><i class="fa-solid fa-magnifying-glass"></i></span>
                   </a>
-                  <!-- <a data-lg-size="1600-2134" data-pinterest-text="Pin it3" data-tweet-text="lightGallery slide  4"
-                    class="gallery-item"
-                    data-src="https://images.unsplash.com/photo-1464852045489-bccb7d17fe39?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1600&q=80"
-                    data-sub-html="<h4>Photo by - <a href='https://unsplash.com/@fynn_it' >fynn</a></h4><p>Location - <a href='https://unsplash.com/s/photos/big-sur%2C-united-states'>Big Sur, United States</a> Wasserauen, Appenzell Innerrhoden, Schweiz  </p>">
-                    <img class="img-responsive"
-                      src="https://images.unsplash.com/photo-1464852045489-bccb7d17fe39?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=240&q=80" />
-                  </a>
-                  <a data-lg-size="1600-1060" data-pinterest-text="Pin it3" data-tweet-text="lightGallery slide  4"
-                    class="gallery-item"
-                    data-src="https://images.unsplash.com/photo-1483728642387-6c3bdd6c93e5?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1600&q=80"
-                    data-sub-html="<h4>Photo by - <a href='https://unsplash.com/@danielleone' >Daniel Leone</a></h4><p>Location - <a href='https://unsplash.com/s/photos/poon-hill%2C-ghode-pani%2C-nepal'>Poon Hill, Ghode Pani, Nepal</a> Taken from the top of Poon Hill before sun rise </p>">
-                    <img class="img-responsive"
-                      src="https://images.unsplash.com/photo-1483728642387-6c3bdd6c93e5?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=240&q=80" />
-                  </a>
-                  <a data-lg-size="1600-1037" data-pinterest-text="Pin it3" data-tweet-text="lightGallery slide  4"
-                    class="gallery-item"
-                    data-src="https://images.unsplash.com/photo-1510011560141-62c7e8fc7908?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1600&q=80"
-                    data-sub-html="<h4>Photo by - <a href='https://unsplash.com/@bboba' >Boba Jovanovic</a></h4><p>Location - <a href='https://unsplash.com/s/photos/bay-of-kotor'>Bay of Kotor</a> Boka kotorska bay </p>">
-                    <img class="img-responsive"
-                      src="https://images.unsplash.com/photo-1510011560141-62c7e8fc7908?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=240&q=80" />
-                  </a>
+                  <!-- 
                   <a data-lg-size="1536-2304" data-pinterest-text="Pin it3" data-tweet-text="lightGallery slide  4"
                     class="gallery-item"
                     data-src="https://images.unsplash.com/photo-1508766206392-8bd5cf550d1c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1536&q=80"
                     data-sub-html="<h4>Photo by - <a href='https://unsplash.com/@rea_le' >Andrea Ledda</a></h4><p>Location - <a href='https://unsplash.com/s/photos/lago-goillet%2C-italy'>Lago Goillet, Italy</a>  Goillet Lake at 2561 meters above Breuil-Cervinia</p>">
                     <img class="img-responsive"
                       src="https://images.unsplash.com/photo-1508766206392-8bd5cf550d1c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=240&q=80" />
-                  </a> -->
+                  </a> 
+                -->
                 </div>
               </div>
               <div class="loteo__prices">
@@ -199,7 +194,7 @@
                   </div>
                   <div>
                     <p class="lote"><i class="fa-solid fa-arrow-right"></i>Lote 86 (459 m<sup>2</sup>)</p>
-                    <p><b>U$$ 40.500</b></p>
+                    <p><b>U$$ 39.500</b></p>
                   </div>
                   <div>
                     <p class="lote"><i class="fa-solid fa-arrow-right"></i>Lote 51 (360 m<sup>2</sup>)</p>
@@ -212,7 +207,7 @@
         </div>
       </div>
       
-      <div class="loteo" data-aos="fade-up" data-aos-duration="5000">
+      <div class="loteo" data-aos="fade-up" data-aos-duration="1000">
         <div class="container">
           <div class="row">
             <div class="col-lg-6">
@@ -262,7 +257,7 @@
                   </div>
                   <div>
                     <p class="lote"><i class="fa-solid fa-arrow-right"></i>Lote 8 (540 m<sup>2</sup>)</p>
-                    <p><b>U$$ 25.585</b></p>
+                    <p><b>U$$ 32.800</b></p>
                   </div>
                   <div>
                     <p class="lote"><i class="fa-solid fa-arrow-right"></i>Lote 39 (348 m<sup>2</sup>)</p>
@@ -283,7 +278,7 @@
         </div>
       </div>
 
-      <div class="loteo" data-aos="fade-up" data-aos-duration="500">
+      <div class="loteo" data-aos="fade-up" data-aos-duration="1000">
         <div class="container">
           <div class="row">
             <div class="col-lg-6">
@@ -307,7 +302,7 @@
                     construcción</span>
                 </div>
                 <div class="loteo__barrio--financiacion">
-                  <strong>FINANCIACIÓN:</strong>
+                  <strong>FINANCIACIÓN:</strong> Entrega 50% y financiación a medida.
                 </div>
                 <div class="loteo__barrio--masInfo">
                   <a href="https://wa.me/5493364379531?text=Hola!%20Quisiera%20recibir%20información%20sobre%20El%20Portal%204" target="_blank" class="btn btn-whatsapp mt-2">
@@ -343,7 +338,7 @@
         </div>
       </div>
 
-      <div class="loteo" data-aos="fade-up" data-aos-duration="500">
+      <div class="loteo" data-aos="fade-up" data-aos-duration="1000">
         <div class="container">
           <div class="row">
             <div class="col-lg-6">
@@ -403,7 +398,7 @@
         </div>
       </div>
 
-      <div class="loteo" data-aos="fade-up" data-aos-duration="500">
+      <div class="loteo" data-aos="fade-up" data-aos-duration="1000">
         <div class="container">
           <div class="row">
             <div class="col-lg-6">
@@ -467,7 +462,7 @@
         </div>
       </div>
 
-      <div class="loteo" data-aos="fade-up" data-aos-duration="500">
+      <div class="loteo" data-aos="fade-up" data-aos-duration="1000">
         <div class="container">
           <div class="row">
             <div class="col-lg-6">
@@ -525,7 +520,7 @@
         </div>
       </div>
 
-      <div class="loteo" data-aos="fade-up" data-aos-duration="500">
+      <div class="loteo" data-aos="fade-up" data-aos-duration="1000">
         <div class="container">
           <div class="row">
             <div class="col-lg-6">
@@ -614,7 +609,7 @@
         </div>
       </div>
 
-      <div class="loteo" data-aos="fade-up" data-aos-duration="500">
+      <div class="loteo" data-aos="fade-up" data-aos-duration="1000">
         <div class="container">
           <div class="row">
             <div class="col-lg-6">
@@ -752,7 +747,7 @@
       </div>
     </div>
 
-    <div class="text-center" data-aos="flip-left" data-aos-duration="2000" >
+    <div class="text-center" data-aos="flip-left" data-aos-duration="1000">
       <img class="logo-footer" src="assets/images/logo_kerlin_rounded.png" alt="Kerlin Bienes Raíces" width="125">
     </div>
     <ul class="social-links">
