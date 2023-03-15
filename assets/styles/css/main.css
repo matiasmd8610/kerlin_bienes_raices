@@ -12846,7 +12846,7 @@ header .navbar .navbar-collapse .nav-item .nav-link {
   position: relative;
 }
 header .navbar .navbar-collapse .nav-item .nav-link:hover:after {
-  width: 85%;
+  width: 88%;
 }
 @media (min-width: 992px) {
   header .navbar .navbar-collapse .nav-item .nav-link:after {
@@ -12859,7 +12859,7 @@ header .navbar .navbar-collapse .nav-item .nav-link:hover:after {
     transition: all 0.3s ease;
     background-color: #fff;
     height: 1px;
-    bottom: 4px;
+    bottom: 2px;
   }
 }
 header .navbar .navbar-collapse .nav-item.contact-us {
