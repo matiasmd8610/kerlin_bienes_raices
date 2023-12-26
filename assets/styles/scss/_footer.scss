@@ -139,22 +139,24 @@ footer {
         height: 6rem;
         animation: bounce-in-top 1.1s both;
         animation-delay: 1s;
-        
+
         a {
             box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 20%), 0 1px 5px 0 rgb(0 0 0 / 12%);
             color: #fff;
             position: absolute;
-            background-color: #009688;
             width: 60px;
             height: 60px;
             border-radius: 50%;
             transition: all .3s ease;
             z-index: 9999;
             padding: 10px;
+            background-color: $color-whatsapp;
+
             &:hover {
-                background-color: $color-whatsapp;
+                background-color: #009688;
                 color: #fff;
             }
+            
             img {
                 height: 40px;
                 margin: 0;
@@ -190,7 +192,7 @@ footer {
                 }
             }
         }
-        
+
         i {
             font-size: 2.2rem;
             color: $color-blue-main;
