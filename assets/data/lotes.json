@@ -1,0 +1,233 @@
+{
+    "lotes": [
+      {
+        "name": "El Portal 2",
+        "id": "portal2",
+        "lotesItems": [
+            {
+                "name": "Lote 4",
+                "dimension": "960",
+                "price" : "85.000"
+            },
+            {
+                "name": "Lote 76",
+                "dimension": "300",
+                "price" : "43.000"
+            },
+            {
+                "name": "Lote 86",
+                "dimension": "459",
+                "price" : "39.500"
+            },
+            {
+                "name": "Lote 51",
+                "dimension": "360",
+                "price" : "49.900"
+            }
+        ]
+      },
+      {
+        "name": "El Portal 3",
+        "id": "portal3",
+        "lotesItems": [
+            {
+                "name": "Lote 4",
+                "dimension": "336",
+                "price" : "26.100"
+            },
+            {
+                "name": "Lote 8",
+                "dimension": "540",
+                "price" : "32.800"
+            },
+            {
+                "name": "Lote 39",
+                "dimension": "348",
+                "price" : "25.500"
+            },
+            {
+                "name": "Lote 51",
+                "dimension": "396",
+                "price" : "28.500"
+            }
+        ]
+      },
+      {
+        "name": "El Portal 4",
+        "id": "portal4",
+        "lotesItems": [
+            {
+                "name": "Lote 2",
+                "dimension": "890",
+                "price" : "Consultar"
+            },
+            {
+                "name": "Lote 13",
+                "dimension": "600",
+                "price" : "Consultar"
+            }
+        ]
+      },
+      {
+        "name": "El Portal 5",
+        "id": "portal5",
+        "lotesItems": [
+            {
+                "name": "Lotes 16 a 20",
+                "dimension": "12x25.5 mts",
+                "price" : "29.150"
+            },
+            {
+                "name": "Lote 22",
+                "dimension": "esquina 18x20 mts",
+                "price" : "31.270"
+            },
+            {
+                "name": "Lotes 25, 27, 29",
+                "dimension": "12x25 mts",
+                "price" : "28.620"
+            },
+            {
+                "name": "Lote 46",
+                "dimension": "17x20 mts",
+                "price" : "30.740"
+            },
+            {
+                "name": "Lote 95",
+                "dimension": "12x26 mts",
+                "price" : "28.620"
+            },
+            {
+                "name": "Lote 102",
+                "dimension": "12x26 mts",
+                "price" : "29.680"
+            },
+            {
+                "name": "Lote 103",
+                "dimension": "12x39 mts",
+                "price" : "33.390"
+            }
+        ]
+      },
+      {
+        "name": "La Molienda",
+        "id": "la-molienda",
+        "lotesItems": [
+            {
+                "name": "Manzana 80",
+                "dimension": "",
+                "price" : "25.000"
+            },
+            {
+                "name": "Manzana 68",
+                "dimension": "",
+                "price" : "30.000"
+            },
+            {
+                "name": "Manzana 48",
+                "dimension": "",
+                "price" : "35.000"
+            }
+        ]
+      },
+      {
+        "name": "Camping Club Belgrano",
+        "id": "camping-club-belgrano",
+        "lotesItems": [
+            {
+                "name": "Manzana 1F 06",
+                "dimension": "",
+                "price" : "35.000"
+            },
+            {
+                "name": "Manzana 1F 05",
+                "dimension": "",
+                "price" : "30.000"
+            },
+            {
+                "name": "Manzana 1H",
+                "dimension": "",
+                "price" : "43.000"
+            }
+        ]
+      },
+      {
+        "name": "El Barrio Somisa",
+        "id": "el-barrio-somisa",
+        "lotesItems": [
+            {
+                "name": "Manzana A (6)",
+                "dimension": "449.38",
+                "price" : "57.891"
+            },
+            {
+                "name": "Manzana A (16)",
+                "dimension": "384.63",
+                "price" : "49.583"
+            },
+            {
+                "name": "Manzana B (34)",
+                "dimension": "414.24",
+                "price" : "49.152"
+            },
+            {
+                "name": "Manzana B (39)",
+                "dimension": "394.31",
+                "price" : "47.812"
+            },
+            {
+                "name": "Manzana C (46)",
+                "dimension": "450.00",
+                "price" : "60.959"
+            },
+            {
+                "name": "Manzana C (49)",
+                "dimension": "377.50",
+                "price" : "49.680"
+            },
+            {
+                "name": "Manzana D (60)",
+                "dimension": "387.70",
+                "price" : "49.247"
+            }
+        ]
+      },
+      {
+        "name": "Alma Verde",
+        "id": "alma-verde",
+        "lotesItems": [
+            {
+                "name": "Lote 01",
+                "dimension": "897",
+                "price" : "70.000"
+            },
+            {
+                "name": "Lote 04",
+                "dimension": "843",
+                "price" : "72.000"
+            },
+            {
+                "name": "Lote 12",
+                "dimension": "751",
+                "price" : "75.000"
+            },
+            {
+                "name": "Lote 116",
+                "dimension": "1600",
+                "price" : "85.000"
+            },
+            {
+                "name": "Lote 130",
+                "dimension": "900",
+                "price" : "75.000"
+            },
+            {
+                "name": "Lote 144",
+                "dimension": "765",
+                "price" : "75.000"
+            }
+        ]
+      }
+    ]
+  }
+  

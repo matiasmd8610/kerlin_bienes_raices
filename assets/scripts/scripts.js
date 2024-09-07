@@ -103,3 +103,37 @@ AOS.init({
   anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
 
 });
+
+/*Print json data
+*******************************************/
+fetch('assets/data/lotes.json') // Cambia 'ruta/al/archivo.json' por la URL o ruta del archivo JSON
+  .then(response => {
+    if (!response.ok) {
+      throw new Error("Error al obtener el JSON");
+    }
+    return response.json(); // Parsear el JSON
+  })
+  .then(data => {
+    data.lotes.forEach(item => {
+      let lotesHTML = document.getElementById(`prices-${item.id}`);
+      let lotesArr = item.lotesItems;
+      
+      if (item.id === "portal5") {
+        var m2 = false;
+      }
+
+      lotesArr.forEach(i => { //Recorro el array de lotesItem de cada lote
+        if (m2 == false) {
+          lotesHTML.innerHTML += `<div><p class="lote"><i class="fa-solid fa-arrow-right"></i>${i.name} (${i.dimension})</p><p><b>U$$ ${i.price}</b></p></div>`;
+        } else if (i.dimension == "") {
+          lotesHTML.innerHTML += `<div><p class="lote"><i class="fa-solid fa-arrow-right"></i>${i.name}</p><p><b>U$$ ${i.price}</b></p></div>`;
+        } else {
+          lotesHTML.innerHTML += `<div><p class="lote"><i class="fa-solid fa-arrow-right"></i>${i.name} (${i.dimension} m<sup>2</sup>)</p><p><b>U$$ ${i.price}</b></p></div>`;
+        }
+      })
+
+    });
+  })
+  .catch(error => {
+    console.error("Error al consumir el JSON:", error);
+  });
