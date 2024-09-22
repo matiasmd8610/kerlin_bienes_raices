@@ -3,6 +3,8 @@
       {
         "name": "El Portal 2",
         "id": "portal2",
+        "status": "Disponible para entregar",
+        "financing": "Todos entrega 50% y hasta 84 cuotas en pesos ajustables por salario, o fija dólares.",
         "lotesItems": [
             {
                 "name": "Lote 4",
@@ -29,6 +31,8 @@
       {
         "name": "El Portal 3",
         "id": "portal3",
+        "status": "Disponible para entregar",
+        "financing": "Entrega 60% y hasta 60 cuotas en pesos ajustables por salario.",
         "lotesItems": [
             {
                 "name": "Lote 4",
@@ -55,6 +59,8 @@
       {
         "name": "El Portal 4",
         "id": "portal4",
+        "status": "Disponible para entregar",
+        "financing": "Entrega 50% y financiación a medida.",
         "lotesItems": [
             {
                 "name": "Lote 2",
@@ -71,6 +77,8 @@
       {
         "name": "El Portal 5",
         "id": "portal5",
+        "status": "En construcción",
+        "financing": "Entrega mínima del 50% y hasta 60 cuotas en pesos ajustables por salario.",
         "lotesItems": [
             {
                 "name": "Lotes 16 a 20",
@@ -112,6 +120,8 @@
       {
         "name": "La Molienda",
         "id": "la-molienda",
+        "status": "En construcción",
+        "financing": "Entrega 30% y hasta 24 CUOTAS",
         "lotesItems": [
             {
                 "name": "Manzana 80",
@@ -133,6 +143,8 @@
       {
         "name": "Camping Club Belgrano",
         "id": "camping-club-belgrano",
+        "status": "Disponible para entregar",
+        "financing": "Consultar",
         "lotesItems": [
             {
                 "name": "Manzana 1F 06",
@@ -154,6 +166,8 @@
       {
         "name": "El Barrio Somisa",
         "id": "el-barrio-somisa",
+        "status": "En construcción",
+        "financing": "<ul><li>Entrega 40% + 36 cuotas</li><li>Entrega 60% + 36 cuotas</li><li>Entrega 40% + 24 cuotas</li><li>Entrega 100% (Descuento 10%)</li><li>El precio publicado corresponde a la Entrega del 100%</li></ul>",
         "lotesItems": [
             {
                 "name": "Manzana A (6)",
@@ -195,6 +209,8 @@
       {
         "name": "Alma Verde",
         "id": "alma-verde",
+        "status": "Disponible para entregar",
+        "financing": "Consultar",
         "lotesItems": [
             {
                 "name": "Lote 01",

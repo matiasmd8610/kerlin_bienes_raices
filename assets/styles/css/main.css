@@ -12836,13 +12836,12 @@ header .navbar .navbar-collapse {
   flex-grow: inherit;
 }
 header .navbar .navbar-collapse .nav-item:not(:last-child) {
-  margin-right: 1.8rem;
+  margin-right: 2.2rem;
 }
 header .navbar .navbar-collapse .nav-item .nav-link {
   font-size: 1.7rem;
   color: #ffffff;
-  letter-spacing: -0.02em;
-  font-weight: 300;
+  font-weight: 600;
   position: relative;
 }
 header .navbar .navbar-collapse .nav-item .nav-link:hover:after {
@@ -12881,7 +12880,7 @@ header .navbar .navbar-collapse .nav-item.contact-us:hover {
   background-color: #009688;
 }
 header .navbar .navbar-collapse .nav-item.contact-us a {
-  font-weight: 400;
+  font-weight: 600;
 }
 header .navbar .navbar-collapse .nav-item.contact-us a:after {
   display: none;

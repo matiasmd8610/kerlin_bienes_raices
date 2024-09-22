@@ -115,8 +115,20 @@ fetch('assets/data/lotes.json') // Cambia 'ruta/al/archivo.json' por la URL o ru
   })
   .then(data => {
     data.lotes.forEach(item => {
+      let lotesStatus = document.querySelector(`#loteo-${item.id} .loteo__barrio--estado .state`);
+      let lotesFinancing = document.querySelector(`#loteo-${item.id} .loteo__barrio--financiacion span`);
       let lotesHTML = document.getElementById(`prices-${item.id}`);
       let lotesArr = item.lotesItems;
+
+      if (item.status == "En construcción") {
+        lotesStatus.innerHTML = "<i class='fa-solid fa-person-digging'></i>" + item.status;
+        lotesStatus.classList.add("in-progress");
+      } else {
+        lotesStatus.innerHTML = "<i class='fa-regular fa-circle-check'></i>" + item.status;
+        lotesStatus.classList.add("available");
+      }
+
+      lotesFinancing.innerHTML = item.financing;
       
       if (item.id === "portal5") {
         var m2 = false;

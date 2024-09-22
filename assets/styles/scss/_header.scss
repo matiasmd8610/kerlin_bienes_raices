@@ -1,12 +1,11 @@
 header {
-    
     @include media-breakpoint-down(sm) {
-    position: fixed;
-    z-index: 2;
-    width: 100%;
+        position: fixed;
+        z-index: 2;
+        width: 100%;
     }
-    
-    
+
+
     &.sticky {
         box-shadow: 0px 0px 6px #333;
         background: rgb(0, 0, 0, 92%);
@@ -22,7 +21,7 @@ header {
         }
     }
 
-    .navbar{
+    .navbar {
         background-color: $color-blue-main;
 
         &-toggler {
@@ -36,23 +35,24 @@ header {
                 flex-direction: column;
                 background-image: none;
                 transition: all .25s ease-in-out;
-                
-                
-                    span{
-                        display: block;
-                        width: 30px;
-                        height: 3px;
-                        background-color: #fff;
-                        transition: all .25s ease-in-out;
-                        &:not(:last-child) {
-                            margin-bottom: 7px;
-                        }
+
+
+                span {
+                    display: block;
+                    width: 30px;
+                    height: 3px;
+                    background-color: #fff;
+                    transition: all .25s ease-in-out;
+
+                    &:not(:last-child) {
+                        margin-bottom: 7px;
                     }
+                }
             }
 
         }
-        
-        &-toggler:focus{
+
+        &-toggler:focus {
             text-decoration: none;
             outline: 0;
             box-shadow: 0 0 0 0;
@@ -71,19 +71,21 @@ header {
 
             .nav-item {
                 &:not(:last-child) {
-                    margin-right: 1.8rem;
+                    margin-right: 2.2rem;
                 }
-                .nav-link{
+
+                .nav-link {
                     font-size: 1.7rem;
-                    color:#ffffff;
-                    letter-spacing: -0.02em;
-                    font-weight: 300;
+                    color: #ffffff;
+                    font-weight: 600;
                     position: relative;
+
                     &:hover {
                         &:after {
                             width: 88%;
                         }
                     }
+
                     &:after {
                         @include media-breakpoint-up(lg) {
                             content: '';
@@ -109,25 +111,30 @@ header {
                     border-radius: 2rem;
                     width: fit-content;
                     transition: all 0.3s ease;
+
                     @include media-breakpoint-down(lg) {
                         margin-top: 2rem;
                     }
+
                     &:hover {
                         background-color: #009688;
                     }
+
                     a {
-                        font-weight: 400;
+                        font-weight: 600;
+
                         &:after {
                             display: none;
                         }
                     }
+
                     i {
                         margin-right: .5rem;
                     }
                 }
             }
         }
-      
+
     }
 
     .navbar-brand {
@@ -140,9 +147,10 @@ header {
 
 }
 
-.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon #S1{
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon #S1 {
     transform: rotate(45deg) translateY(7px);
 }
-.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon #S2{
+
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon #S2 {
     transform: rotate(-45deg) translateY(-7px);
 }
